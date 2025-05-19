@@ -33,7 +33,7 @@ class RequestLogFilter(logging.Filter):
     def filter(self, record):
         record.request_id = id(record)
         return True
-
+#kujtg
 logger.addFilter(RequestLogFilter())
 
 app = Flask(__name__, static_folder='../client', static_url_path='')

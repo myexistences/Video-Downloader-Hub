@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video Downloader</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Video Downloader</h1>
+        <p>Download videos from YouTube and Instagram easily</p>
+    </header>
+    
+    <div class="container">
+        <div class="tab-container">
+            <div class="tab active" data-tab="youtube">YouTube</div>
+            <div class="tab" data-tab="instagram">Instagram</div>
+        </div>
+        
+        <div class="content-box">
+            <div class="tab-content active" id="youtube-content">
+                <div class="input-group">
+                    <input type="url" id="youtube-url" placeholder="Paste YouTube video URL here..." />
+                    <button id="youtube-fetch" class="fetch-btn">Fetch Info</button>
+                </div>
+                
+                <div class="progress-bar" id="youtube-progress">
+                    <div class="progress"></div>
+                </div>
+                <div class="loading-text" id="youtube-loading">Fetching video information...</div>
+                
+                <div class="error-message" id="youtube-error">
+                    Please enter a valid YouTube URL
+                </div>
+                
+                <div class="result-container" id="youtube-result">
+                    <div class="video-info">
+                        <div class="thumbnail">
+                            <img id="youtube-thumbnail" src="" alt="Video thumbnail" />
+                        </div>
+                        <div class="info-text">
+                            <h3 id="youtube-title">Video Title</h3>
+                            <p id="youtube-duration">Duration: 00:00</p>
+                            <p id="youtube-author">Channel: Unknown</p>
+                        </div>
+                    </div>
+                    
+                    <div class="format-selection">
+                        <h4>Select Format:</h4>
+                        <div class="format-options" id="youtube-formats"></div>
+                    </div>
+                    
+                    <button class="download-btn" id="youtube-download" disabled>Download Now</button>
+                </div>
+            </div>
+            
+            <div class="tab-content" id="instagram-content">
+                <div class="input-group">
+                    <input type="url" id="instagram-url" placeholder="Paste Instagram video/reel URL here..." />
+                    <button id="instagram-fetch" class="fetch-btn">Fetch Info</button>
+                </div>
+                
+                <div class="progress-bar" id="instagram-progress">
+                    <div class="progress"></div>
+                </div>
+                <div class="loading-text" id="instagram-loading">Fetching video information...</div>
+                
+                <div class="error-message" id="instagram-error">
+                    Please enter a valid Instagram video or reel URL
+                </div>
+                
+                <div class="result-container" id="instagram-result">
+                    <div class="video-info">
+                        <div class="thumbnail">
+                            <img id="instagram-thumbnail" src="" alt="Video thumbnail" />
+                        </div>
+                        <div class="info-text">
+                            <h3 id="instagram-title">Instagram Post</h3>
+                            <p id="instagram-author">User: @unknown</p>
+                        </div>
+                    </div>
+                    
+                    <div class="format-selection">
+                        <h4>Select Format:</h4>
+                        <div class="format-options" id="instagram-formats"></div>
+                    </div>
+                    
+                    <button class="download-btn" id="instagram-download" disabled>Download Now</button>
+                </div>
+            </div>
+        </div>
+        
+        <div class="how-to">
+            <h2>How to Use</h2>
+            <div class="step">
+                <div class="step-number">1</div>
+                <div>Copy the URL of the YouTube video or Instagram post/reel</div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div>Paste the URL in the input field</div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div>Wait for video information to load</div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div>Select your preferred format and quality</div>
+            </div>
+            <div class="step">
+                <div class="step-number">5</div>
+                <div>Click "Download Now" to save the video</div>
+            </div>
+        </div>
+    </div>
+    
+    <footer>
+        <p>This tool is for personal use only. Please respect copyright laws and terms of service of YouTube and Instagram.</p>
+        <p>© 2025 Video Downloader. All rights reserved.</p>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>

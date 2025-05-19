@@ -1,0 +1,1653 @@
+2025-05-20 00:15:26,882 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:15:26,898 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:15:49,331 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:15:49,332 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:15:49,334 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:15:50,676 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:15:50,687 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:15:54,281 - __main__ - INFO - Serving index.html
+2025-05-20 00:15:54,375 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:15:54] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:15:54,430 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:15:54] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:15:54,514 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:15:54] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 00:16:06,129 - __main__ - INFO - Serving index.html
+2025-05-20 00:16:06,131 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:16:06] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:16:06,203 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:16:06] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:16:06,373 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:16:06] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:18:43,718 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:18:43,719 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:18:43,721 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:18:45,043 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:18:45,053 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:18:48,228 - __main__ - INFO - Serving index.html
+2025-05-20 00:18:48,346 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:18:48] "GET / HTTP/1.1" 200 -
+2025-05-20 00:18:48,397 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:18:48] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 00:18:48,494 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:18:48] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 00:18:52,823 - __main__ - INFO - Received request for URL: https://www.youtube.com/watch
+2025-05-20 00:18:52,825 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:18:53,765 - __main__ - INFO - Getting video info...
+2025-05-20 00:18:56,289 - __main__ - INFO - Video info received successfully
+2025-05-20 00:18:56,294 - __main__ - ERROR - Error processing request: 'formats'
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 75, in youtube_info
+    for f in info['formats']:
+             ~~~~^^^^^^^^^^^
+KeyError: 'formats'
+2025-05-20 00:18:56,299 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:18:56] "[35m[1mGET /api/youtube/info?url=https://www.youtube.com/watch HTTP/1.1[0m" 500 -
+2025-05-20 00:19:19,134 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:19:19,135 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:19:19,267 - __main__ - INFO - Getting video info...
+2025-05-20 00:19:24,840 - __main__ - ERROR - Error processing request: [0;31mERROR:[0m [youtube] JakT3Uru72s: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1594, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1729, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 732, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube.py", line 4178, in _real_extract
+    self.raise_no_formats(reason, expected=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 1210, in raise_no_formats
+    raise ExtractorError(msg, expected=expected, video_id=video_id)
+yt_dlp.utils.ExtractorError: [youtube] JakT3Uru72s: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 70, in youtube_info
+    info = ydl.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1583, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1612, in wrapper
+    self.report_error(str(e), e.format_traceback())
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1061, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1000, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] JakT3Uru72s: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+2025-05-20 00:19:24,865 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:19:24] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:19:37,828 - __main__ - INFO - Received request for URL: https://www.youtube.com/watch
+2025-05-20 00:19:37,829 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:19:37,978 - __main__ - INFO - Getting video info...
+2025-05-20 00:19:39,198 - __main__ - INFO - Video info received successfully
+2025-05-20 00:19:39,200 - __main__ - ERROR - Error processing request: 'formats'
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 75, in youtube_info
+    for f in info['formats']:
+             ~~~~^^^^^^^^^^^
+KeyError: 'formats'
+2025-05-20 00:19:39,203 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:19:39] "[35m[1mGET /api/youtube/info?url=https://www.youtube.com/watch HTTP/1.1[0m" 500 -
+2025-05-20 00:19:42,929 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:19:42,930 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:19:43,050 - __main__ - INFO - Getting video info...
+2025-05-20 00:19:48,171 - __main__ - ERROR - Error processing request: [0;31mERROR:[0m [youtube] JakT3Uru72s: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1594, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1729, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 732, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube.py", line 4178, in _real_extract
+    self.raise_no_formats(reason, expected=True)
+    ~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 1210, in raise_no_formats
+    raise ExtractorError(msg, expected=expected, video_id=video_id)
+yt_dlp.utils.ExtractorError: [youtube] JakT3Uru72s: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 70, in youtube_info
+    info = ydl.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1583, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1612, in wrapper
+    self.report_error(str(e), e.format_traceback())
+    ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1061, in report_error
+    self.trouble(f'{self._format_err("ERROR:", self.Styles.ERROR)} {message}', *args, **kwargs)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1000, in trouble
+    raise DownloadError(message, exc_info)
+yt_dlp.utils.DownloadError: [0;31mERROR:[0m [youtube] JakT3Uru72s: Sign in to confirm you’re not a bot. This helps protect our community. Learn more
+2025-05-20 00:19:48,182 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:19:48] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:20:07,769 - __main__ - INFO - Received request for URL: https://www.youtube.com/watch
+2025-05-20 00:20:07,771 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:20:07,894 - __main__ - INFO - Getting video info...
+2025-05-20 00:20:08,778 - __main__ - INFO - Video info received successfully
+2025-05-20 00:20:08,780 - __main__ - ERROR - Error processing request: 'formats'
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 75, in youtube_info
+    for f in info['formats']:
+             ~~~~^^^^^^^^^^^
+KeyError: 'formats'
+2025-05-20 00:20:08,783 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:20:08] "[35m[1mGET /api/youtube/info?url=https://www.youtube.com/watch HTTP/1.1[0m" 500 -
+2025-05-20 00:20:27,437 - __main__ - INFO - Received request for URL: https://youtube.com/watch
+2025-05-20 00:20:27,438 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:20:27,535 - __main__ - INFO - Getting video info...
+2025-05-20 00:20:28,672 - __main__ - INFO - Video info received successfully
+2025-05-20 00:20:28,673 - __main__ - ERROR - Error processing request: 'formats'
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 75, in youtube_info
+    for f in info['formats']:
+             ~~~~^^^^^^^^^^^
+KeyError: 'formats'
+2025-05-20 00:20:28,675 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:20:28] "[35m[1mGET /api/youtube/info?url=https://youtube.com/watch HTTP/1.1[0m" 500 -
+2025-05-20 00:20:45,301 - __main__ - INFO - Received request for URL: https://www.youtube.com/watch
+2025-05-20 00:20:45,302 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:20:45,391 - __main__ - INFO - Getting video info...
+2025-05-20 00:20:46,283 - __main__ - INFO - Video info received successfully
+2025-05-20 00:20:46,286 - __main__ - ERROR - Error processing request: 'formats'
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 75, in youtube_info
+    for f in info['formats']:
+             ~~~~^^^^^^^^^^^
+KeyError: 'formats'
+2025-05-20 00:20:46,290 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:20:46] "[35m[1mGET /api/youtube/info?url=https://www.youtube.com/watch HTTP/1.1[0m" 500 -
+2025-05-20 00:21:28,664 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 00:21:29,130 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:21:32,539 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:21:32,557 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:22:09,966 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:22:09,967 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:22:09,969 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:22:11,241 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:22:11,248 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:22:16,283 - __main__ - INFO - Serving index.html
+2025-05-20 00:22:16,342 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:22:16] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:22:16,384 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:22:16] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:22:16,530 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:22:16] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:22:25,956 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:22:25,958 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:22:26,139 - __main__ - INFO - Getting video info...
+2025-05-20 00:22:28,023 - __main__ - INFO - Video info received successfully
+2025-05-20 00:22:28,023 - __main__ - ERROR - Error processing request: Could not extract video information
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 84, in youtube_info
+    raise Exception("Could not extract video information")
+Exception: Could not extract video information
+2025-05-20 00:22:28,025 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:22:28] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:23:04,576 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 00:23:04,769 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:23:07,072 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:23:07,082 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:23:47,365 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:23:47,366 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:23:47,368 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:23:50,591 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:23:50,601 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:24:00,607 - __main__ - INFO - Serving index.html
+2025-05-20 00:24:00,664 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:24:00] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:24:00,717 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:24:00] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:24:00,870 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:24:00] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:24:07,937 - __main__ - INFO - Received request for URL: https://www.youtube.com/watch
+2025-05-20 00:24:07,938 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:24:08,097 - __main__ - INFO - Getting video info...
+2025-05-20 00:24:09,220 - __main__ - ERROR - Error extracting info: failed to load cookies
+2025-05-20 00:24:09,641 - __main__ - ERROR - Error processing request: failed to load cookies
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 310, in _extract_chrome_cookies
+    cursor = _open_database_copy(cookie_database_path, tmpdir)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1102, in _open_database_copy
+    shutil.copy(database_path, database_copy_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 428, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Gaming Nove\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 99, in load_cookies
+    extract_cookies_from_browser(browser_name, profile, YDLLogger(ydl), keyring=keyring, container=container))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 122, in extract_cookies_from_browser
+    return _extract_chrome_cookies(browser_name, profile, keyring, logger)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 351, in _extract_chrome_cookies
+    raise DownloadError(message)  # force exit
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+yt_dlp.utils.DownloadError: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 93, in youtube_info
+    info = ydl.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1788, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 748, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\generic.py", line 2418, in _real_extract
+    full_response = self._request_webpage(url, video_id, headers=filter_dict({
+        'Accept-Encoding': 'identity',
+        'Referer': smuggled_data.get('referer'),
+    }), impersonate=impersonate)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 904, in _request_webpage
+    return self._downloader.urlopen(self._create_request(url_or_request, data, headers, query, extensions))
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4186, in urlopen
+    return self._request_director.send(req)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4266, in _request_director
+    return self.build_request_director(_REQUEST_HANDLERS.values(), _RH_PREFERENCES)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4241, in build_request_director
+    cookiejar=self.cookiejar,
+              ^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4132, in cookiejar
+    return load_cookies(
+        self.params.get('cookiefile'), self.params.get('cookiesfrombrowser'), self)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 310, in _extract_chrome_cookies
+    cursor = _open_database_copy(cookie_database_path, tmpdir)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1102, in _open_database_copy
+    shutil.copy(database_path, database_copy_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 428, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Gaming Nove\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 99, in load_cookies
+    extract_cookies_from_browser(browser_name, profile, YDLLogger(ydl), keyring=keyring, container=container))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 122, in extract_cookies_from_browser
+    return _extract_chrome_cookies(browser_name, profile, keyring, logger)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 351, in _extract_chrome_cookies
+    raise DownloadError(message)  # force exit
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+yt_dlp.utils.DownloadError: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 100, in youtube_info
+    info = ydl2.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1788, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 748, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\generic.py", line 2418, in _real_extract
+    full_response = self._request_webpage(url, video_id, headers=filter_dict({
+        'Accept-Encoding': 'identity',
+        'Referer': smuggled_data.get('referer'),
+    }), impersonate=impersonate)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 904, in _request_webpage
+    return self._downloader.urlopen(self._create_request(url_or_request, data, headers, query, extensions))
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4186, in urlopen
+    return self._request_director.send(req)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4266, in _request_director
+    return self.build_request_director(_REQUEST_HANDLERS.values(), _RH_PREFERENCES)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4241, in build_request_director
+    cookiejar=self.cookiejar,
+              ^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4132, in cookiejar
+    return load_cookies(
+        self.params.get('cookiefile'), self.params.get('cookiesfrombrowser'), self)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+2025-05-20 00:24:09,671 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:24:09] "[35m[1mGET /api/youtube/info?url=https://www.youtube.com/watch HTTP/1.1[0m" 500 -
+2025-05-20 00:24:18,294 - __main__ - INFO - Received request for URL: https://www.youtube.com/watch
+2025-05-20 00:24:18,295 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:24:18,390 - __main__ - INFO - Getting video info...
+2025-05-20 00:24:18,797 - __main__ - ERROR - Error extracting info: failed to load cookies
+2025-05-20 00:24:19,305 - __main__ - ERROR - Error processing request: failed to load cookies
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 310, in _extract_chrome_cookies
+    cursor = _open_database_copy(cookie_database_path, tmpdir)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1102, in _open_database_copy
+    shutil.copy(database_path, database_copy_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 428, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Gaming Nove\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 99, in load_cookies
+    extract_cookies_from_browser(browser_name, profile, YDLLogger(ydl), keyring=keyring, container=container))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 122, in extract_cookies_from_browser
+    return _extract_chrome_cookies(browser_name, profile, keyring, logger)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 351, in _extract_chrome_cookies
+    raise DownloadError(message)  # force exit
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+yt_dlp.utils.DownloadError: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 93, in youtube_info
+    info = ydl.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1788, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 748, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\generic.py", line 2418, in _real_extract
+    full_response = self._request_webpage(url, video_id, headers=filter_dict({
+        'Accept-Encoding': 'identity',
+        'Referer': smuggled_data.get('referer'),
+    }), impersonate=impersonate)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 904, in _request_webpage
+    return self._downloader.urlopen(self._create_request(url_or_request, data, headers, query, extensions))
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4186, in urlopen
+    return self._request_director.send(req)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4266, in _request_director
+    return self.build_request_director(_REQUEST_HANDLERS.values(), _RH_PREFERENCES)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4241, in build_request_director
+    cookiejar=self.cookiejar,
+              ^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4132, in cookiejar
+    return load_cookies(
+        self.params.get('cookiefile'), self.params.get('cookiesfrombrowser'), self)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 310, in _extract_chrome_cookies
+    cursor = _open_database_copy(cookie_database_path, tmpdir)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1102, in _open_database_copy
+    shutil.copy(database_path, database_copy_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 428, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Gaming Nove\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 99, in load_cookies
+    extract_cookies_from_browser(browser_name, profile, YDLLogger(ydl), keyring=keyring, container=container))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 122, in extract_cookies_from_browser
+    return _extract_chrome_cookies(browser_name, profile, keyring, logger)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 351, in _extract_chrome_cookies
+    raise DownloadError(message)  # force exit
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+yt_dlp.utils.DownloadError: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 100, in youtube_info
+    info = ydl2.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1788, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 748, in extract
+    ie_result = self._real_extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\generic.py", line 2418, in _real_extract
+    full_response = self._request_webpage(url, video_id, headers=filter_dict({
+        'Accept-Encoding': 'identity',
+        'Referer': smuggled_data.get('referer'),
+    }), impersonate=impersonate)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 904, in _request_webpage
+    return self._downloader.urlopen(self._create_request(url_or_request, data, headers, query, extensions))
+           ~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4186, in urlopen
+    return self._request_director.send(req)
+           ^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4266, in _request_director
+    return self.build_request_director(_REQUEST_HANDLERS.values(), _RH_PREFERENCES)
+           ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4241, in build_request_director
+    cookiejar=self.cookiejar,
+              ^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4132, in cookiejar
+    return load_cookies(
+        self.params.get('cookiefile'), self.params.get('cookiesfrombrowser'), self)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+2025-05-20 00:24:19,383 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:24:19] "[35m[1mGET /api/youtube/info?url=https://www.youtube.com/watch HTTP/1.1[0m" 500 -
+2025-05-20 00:24:24,383 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:24:24,383 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:24:24,473 - __main__ - INFO - Getting video info...
+2025-05-20 00:24:24,807 - __main__ - ERROR - Error extracting info: failed to load cookies
+2025-05-20 00:24:25,251 - __main__ - ERROR - Error processing request: failed to load cookies
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 310, in _extract_chrome_cookies
+    cursor = _open_database_copy(cookie_database_path, tmpdir)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1102, in _open_database_copy
+    shutil.copy(database_path, database_copy_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 428, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Gaming Nove\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 99, in load_cookies
+    extract_cookies_from_browser(browser_name, profile, YDLLogger(ydl), keyring=keyring, container=container))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 122, in extract_cookies_from_browser
+    return _extract_chrome_cookies(browser_name, profile, keyring, logger)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 351, in _extract_chrome_cookies
+    raise DownloadError(message)  # force exit
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+yt_dlp.utils.DownloadError: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 93, in youtube_info
+    info = ydl.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1788, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 745, in extract
+    self.initialize()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 654, in initialize
+    self._real_initialize()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 481, in _real_initialize
+    self._initialize_pref()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 464, in _initialize_pref
+    pref_cookie = self._youtube_cookies.get('PREF')
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 558, in _youtube_cookies
+    return self._get_cookies('https://www.youtube.com')
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 3642, in _get_cookies
+    return LenientSimpleCookie(self._downloader.cookiejar.get_cookie_header(url))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4132, in cookiejar
+    return load_cookies(
+        self.params.get('cookiefile'), self.params.get('cookiesfrombrowser'), self)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 310, in _extract_chrome_cookies
+    cursor = _open_database_copy(cookie_database_path, tmpdir)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 1102, in _open_database_copy
+    shutil.copy(database_path, database_copy_path)
+    ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 428, in copy
+    copyfile(src, dst, follow_symlinks=follow_symlinks)
+    ~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 260, in copyfile
+    with open(src, 'rb') as fsrc:
+         ~~~~^^^^^^^^^^^
+PermissionError: [Errno 13] Permission denied: 'C:\\Users\\Gaming Nove\\AppData\\Local\\Google\\Chrome\\User Data\\Default\\Network\\Cookies'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 99, in load_cookies
+    extract_cookies_from_browser(browser_name, profile, YDLLogger(ydl), keyring=keyring, container=container))
+    ~~~~~~~~~~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 122, in extract_cookies_from_browser
+    return _extract_chrome_cookies(browser_name, profile, keyring, logger)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 351, in _extract_chrome_cookies
+    raise DownloadError(message)  # force exit
+    ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+yt_dlp.utils.DownloadError: Could not copy Chrome cookie database. See  https://github.com/yt-dlp/yt-dlp/issues/7271  for more info
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 100, in youtube_info
+    info = ydl2.extract_info(cleaned_url, download=False)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1642, in extract_info
+    return self.__extract_info(url, self.get_info_extractor(key), download, extra_info, process)
+           ~~~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1653, in wrapper
+    return func(self, *args, **kwargs)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 1788, in __extract_info
+    ie_result = ie.extract(url)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 745, in extract
+    self.initialize()
+    ~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 654, in initialize
+    self._real_initialize()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 481, in _real_initialize
+    self._initialize_pref()
+    ~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 464, in _initialize_pref
+    pref_cookie = self._youtube_cookies.get('PREF')
+                  ^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\youtube\_base.py", line 558, in _youtube_cookies
+    return self._get_cookies('https://www.youtube.com')
+           ~~~~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\extractor\common.py", line 3642, in _get_cookies
+    return LenientSimpleCookie(self._downloader.cookiejar.get_cookie_header(url))
+                               ^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\functools.py", line 1026, in __get__
+    val = self.func(instance)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\YoutubeDL.py", line 4132, in cookiejar
+    return load_cookies(
+        self.params.get('cookiefile'), self.params.get('cookiesfrombrowser'), self)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\yt_dlp\cookies.py", line 113, in load_cookies
+    raise CookieLoadError('failed to load cookies')
+yt_dlp.cookies.CookieLoadError: failed to load cookies
+2025-05-20 00:24:25,313 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:24:25] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:25:33,312 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 00:25:33,775 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:25:37,040 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:25:37,049 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:25:51,178 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:25:51,179 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:25:51,182 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:25:52,564 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:25:52,572 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:25:55,293 - __main__ - INFO - Serving index.html
+2025-05-20 00:25:55,381 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:25:55] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:25:55,451 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:25:55] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:25:55,536 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:25:55] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:25:59,543 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:26:02,300 - __main__ - INFO - Trying with cookies from: ('chrome',)
+2025-05-20 00:26:03,661 - __main__ - WARNING - Failed with cookies from ('chrome',): failed to load cookies
+2025-05-20 00:26:03,662 - __main__ - INFO - Trying with cookies from: ('firefox',)
+2025-05-20 00:26:03,776 - __main__ - WARNING - Failed with cookies from ('firefox',): failed to load cookies
+2025-05-20 00:26:03,777 - __main__ - INFO - Trying with cookies from: ('edge',)
+2025-05-20 00:26:04,795 - __main__ - WARNING - Failed with cookies from ('edge',): failed to load cookies
+2025-05-20 00:26:04,795 - __main__ - INFO - Trying with cookies from: ('safari',)
+2025-05-20 00:26:04,894 - __main__ - WARNING - Failed with cookies from ('safari',): failed to load cookies
+2025-05-20 00:26:04,895 - __main__ - INFO - Trying with cookies from: None
+2025-05-20 00:26:05,605 - __main__ - ERROR - Error processing request: Failed to extract video info: failed to load cookies
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 123, in youtube_info
+    raise Exception(f"Failed to extract video info: {str(last_error)}")
+Exception: Failed to extract video info: failed to load cookies
+2025-05-20 00:26:05,607 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:26:05] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:27:21,013 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 00:27:21,204 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:27:23,201 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:27:23,207 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:27:37,867 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:27:37,875 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:27:37,903 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:27:39,341 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:27:39,349 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:27:41,825 - __main__ - INFO - Serving index.html
+2025-05-20 00:27:41,879 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:27:41] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:27:41,925 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:27:41] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:27:42,098 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:27:42] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:27:49,979 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:27:51,821 - __main__ - INFO - Initializing yt-dlp
+2025-05-20 00:27:51,995 - __main__ - INFO - Getting video info...
+2025-05-20 00:27:53,250 - __main__ - INFO - Video info received successfully
+2025-05-20 00:27:53,252 - __main__ - ERROR - Error processing request: Could not extract video information
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 113, in youtube_info
+    raise Exception("Could not extract video information")
+Exception: Could not extract video information
+2025-05-20 00:27:53,257 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:27:53] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:28:58,032 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:28:58,034 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:28:58,037 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:28:58,478 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:28:58,486 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:29:00,614 - __main__ - INFO - Serving index.html
+2025-05-20 00:29:00,706 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:29:00] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:29:00,771 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:29:00] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:29:00,864 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:29:00] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:29:09,273 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:29:10,497 - pytube.helpers - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2025-05-20 00:29:10,817 - __main__ - ERROR - Error processing request: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 81, in youtube_info
+    title = yt.title
+            ^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+        endpoint_url,
+    ...<2 lines>...
+        data=data
+    )
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2025-05-20 00:29:10,839 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:29:10] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:29:48,850 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 00:29:48,955 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:29:49,677 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:29:49,695 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:30:02,786 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:30:02,787 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:30:02,789 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:30:03,178 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:30:03,185 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:30:36,868 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:30:36,869 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:30:36,871 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:30:37,313 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:30:37,323 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:30:40,964 - __main__ - INFO - Serving index.html
+2025-05-20 00:30:41,044 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:30:41] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:30:41,102 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:30:41] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:30:41,239 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:30:41] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:30:46,447 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:30:48,707 - pytube.helpers - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2025-05-20 00:30:48,956 - __main__ - ERROR - Error processing request: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 103, in youtube_info
+    title = yt.title
+            ^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+        endpoint_url,
+    ...<2 lines>...
+        data=data
+    )
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2025-05-20 00:30:48,973 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:30:48] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:31:04,836 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:31:07,691 - pytube.helpers - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2025-05-20 00:31:07,863 - __main__ - ERROR - Error processing request: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 103, in youtube_info
+    title = yt.title
+            ^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+        endpoint_url,
+    ...<2 lines>...
+        data=data
+    )
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2025-05-20 00:31:07,872 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:31:07] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:51:32,621 - __main__ - INFO - Received request for URL: https://youtu.be/JakT3Uru72s
+2025-05-20 00:51:34,211 - pytube.helpers - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2025-05-20 00:51:34,379 - __main__ - ERROR - Error processing request: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 103, in youtube_info
+    title = yt.title
+            ^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+        endpoint_url,
+    ...<2 lines>...
+        data=data
+    )
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2025-05-20 00:51:34,392 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:51:34] "[35m[1mGET /api/youtube/info?url=https://youtu.be/JakT3Uru72s HTTP/1.1[0m" 500 -
+2025-05-20 00:55:19,034 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 00:55:19,035 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 00:55:19,037 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 00:55:19,462 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 00:55:19,470 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 00:55:19,537 - __main__ - INFO - Serving index.html
+2025-05-20 00:55:19,601 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:55:19] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:55:19,654 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:55:19] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:55:19,656 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:55:19] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:55:22,198 - __main__ - INFO - Serving index.html
+2025-05-20 00:55:22,199 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:55:22] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 00:55:22,242 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:55:22] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 00:55:22,461 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:55:22] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 00:55:29,627 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 00:55:30,942 - pytube.helpers - DEBUG - matched regex search: (?:v=|\/)([0-9A-Za-z_-]{11}).*
+2025-05-20 00:55:31,212 - __main__ - ERROR - Error processing request: HTTP Error 400: Bad Request
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 103, in youtube_info
+    title = yt.title
+            ^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 341, in title
+    self._title = self.vid_info['videoDetails']['title']
+                  ^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\__main__.py", line 246, in vid_info
+    innertube_response = innertube.player(self.video_id)
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 448, in player
+    return self._call_api(endpoint, query, self.base_data)
+           ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\innertube.py", line 390, in _call_api
+    response = request._execute_request(
+        endpoint_url,
+    ...<2 lines>...
+        data=data
+    )
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\.venv\Lib\site-packages\pytube\request.py", line 37, in _execute_request
+    return urlopen(request, timeout=timeout)  # nosec
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 189, in urlopen
+    return opener.open(url, data, timeout)
+           ~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 495, in open
+    response = meth(req, response)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 604, in http_response
+    response = self.parent.error(
+        'http', request, response, code, msg, hdrs)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 533, in error
+    return self._call_chain(*args)
+           ~~~~~~~~~~~~~~~~^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 466, in _call_chain
+    result = func(*args)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\urllib\request.py", line 613, in http_error_default
+    raise HTTPError(req.full_url, code, msg, hdrs, fp)
+urllib.error.HTTPError: HTTP Error 400: Bad Request
+2025-05-20 00:55:31,236 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 00:55:31] "[35m[1mGET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1[0m" 500 -
+2025-05-20 01:05:22,307 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:05:22,309 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 01:05:22,314 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:05:23,756 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:05:23,801 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:05:35,760 - __main__ - INFO - Serving index.html
+2025-05-20 01:05:35,865 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:05:35] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:05:35,924 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:05:35] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:05:36,024 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:05:36] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:05:43,339 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:05:51,754 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:05:51,755 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:05:51] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:06:05,844 - __main__ - INFO - Download request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1, format: 137, type: video
+2025-05-20 01:06:12,696 - __main__ - ERROR - Download error: 'url'
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 251, in youtube_download
+    url = info['url']
+          ~~~~^^^^^^^
+KeyError: 'url'
+2025-05-20 01:06:12,699 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:06:12] "[35m[1mGET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137 HTTP/1.1[0m" 500 -
+2025-05-20 01:07:49,107 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 01:07:49,386 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:07:51,945 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:07:51,957 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:08:34,690 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:08:34,691 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 01:08:34,695 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:08:36,215 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:08:36,227 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:08:37,575 - __main__ - INFO - Download request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1, format: 137, type: video
+2025-05-20 01:08:44,591 - __main__ - ERROR - Download error: 'url'
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 246, in youtube_download
+    url = info['url']
+          ~~~~^^^^^^^
+KeyError: 'url'
+2025-05-20 01:08:44,594 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:08:44] "[35m[1mGET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137 HTTP/1.1[0m" 500 -
+2025-05-20 01:08:46,237 - __main__ - INFO - Serving index.html
+2025-05-20 01:08:46,292 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:08:46] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:08:46,701 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:08:46] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:08:46,702 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:08:46] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:08:47,741 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:08:53,682 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:08:53,684 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:08:53] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:09:01,610 - __main__ - INFO - Serving index.html
+2025-05-20 01:09:01,612 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:09:01] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:09:01,661 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:09:01] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:09:01,874 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:09:01] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:09:04,250 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:09:10,564 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:09:10,566 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:09:10] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:09:14,020 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:09:19,200 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:09:19,201 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:09:19] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:09:21,536 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:09:27,095 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:09:27,097 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:09:27] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:09:45,716 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:09:51,243 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:09:51,245 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:09:51] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:13:05,762 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 01:13:05,974 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:13:07,670 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:13:07,677 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:13:51,924 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:13:51,925 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 01:13:51,928 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:13:53,729 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:13:53,744 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:13:54,895 - __main__ - INFO - Serving index.html
+2025-05-20 01:13:54,992 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:13:54] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:13:55,080 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:13:55] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:13:55,169 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:13:55] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:13:58,119 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:14:05,727 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:14:05,728 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:14:05] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:14:10,153 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:14:15,785 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:14:15,786 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:14:15] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:14:19,163 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:14:24,658 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:14:24,660 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:14:24] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:14:25,712 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:14:31,252 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:14:31,253 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:14:31] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:14:32,814 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:14:38,482 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:14:38,483 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:14:38] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:16:40,105 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:16:46,176 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:16:46,177 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:16:46] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:17:53,218 - werkzeug - INFO -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 01:17:53,391 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:17:54,989 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:17:55,002 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:19:17,658 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:19:17,659 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 01:19:17,662 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:19:19,504 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:19:19,513 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:19:19,734 - __main__ - INFO - Serving index.html
+2025-05-20 01:19:19,844 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:19:19] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:19:19,905 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:19:19] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:19:19,907 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:19:19] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:19:23,824 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:19:30,464 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:19:30,465 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:19:30] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:19:43,999 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:19:49,354 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:19:49,355 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:19:49] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:21:48,910 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:21:54,750 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:21:54,752 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:21:54] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:23:49,959 - werkzeug - INFO - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:23:49,960 - werkzeug - INFO - [33mPress CTRL+C to quit[0m
+2025-05-20 01:23:49,963 - werkzeug - INFO -  * Restarting with stat
+2025-05-20 01:23:51,173 - werkzeug - WARNING -  * Debugger is active!
+2025-05-20 01:23:51,181 - werkzeug - INFO -  * Debugger PIN: 621-194-202
+2025-05-20 01:23:56,924 - __main__ - INFO - Serving index.html
+2025-05-20 01:23:57,049 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:23:57] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:23:57,099 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:23:57] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:23:57,100 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:23:57] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:24:01,554 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:24:07,835 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:24:07,837 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:24:07] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:24:16,004 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:24:21,181 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:24:21,183 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:24:21] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:24:23,681 - __main__ - INFO - Received request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:24:28,946 - __main__ - INFO - Sending response with 5 formats
+2025-05-20 01:24:28,947 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:24:28] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:24:36,409 - __main__ - INFO - Serving index.html
+2025-05-20 01:24:36,410 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:24:36] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:24:36,464 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:24:36] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:24:36,659 - werkzeug - INFO - 127.0.0.1 - - [20/May/2025 01:24:36] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:26:58,004 - __main__ - INFO - [server.py:305] - Server starting on http://localhost:3001
+2025-05-20 01:26:58,004 - __main__ - INFO - [server.py:306] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:26:58,036 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:26:58,037 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:26:58,040 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:26:59,300 - __main__ - INFO - [server.py:305] - Server starting on http://localhost:3001
+2025-05-20 01:26:59,301 - __main__ - INFO - [server.py:306] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:26:59,318 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:26:59,328 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:27:04,636 - __main__ - INFO - [server.py:88] - Serving index.html
+2025-05-20 01:27:04,701 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:27:04] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:27:04,771 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:27:04] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:27:04,892 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:27:04] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:27:09,192 - __main__ - INFO - [server.py:110] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:27:09,192 - __main__ - INFO - [server.py:119] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:27:09,232 - __main__ - INFO - [server.py:127] - FFmpeg available: True
+2025-05-20 01:27:09,232 - __main__ - INFO - [server.py:141] - Starting video info extraction with yt-dlp
+2025-05-20 01:27:16,272 - __main__ - INFO - [server.py:144] - Successfully extracted video info
+2025-05-20 01:27:16,272 - __main__ - DEBUG - [server.py:147] - Available formats: 43
+2025-05-20 01:27:16,273 - __main__ - INFO - [server.py:156] - Filtered formats count: 18
+2025-05-20 01:27:16,273 - __main__ - INFO - [server.py:166] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:27:16,273 - __main__ - DEBUG - [server.py:170] - Processing 1080p format
+2025-05-20 01:27:16,273 - __main__ - DEBUG - [server.py:193] - Added format: 1080p - No Audio
+2025-05-20 01:27:16,274 - __main__ - DEBUG - [server.py:170] - Processing 720p format
+2025-05-20 01:27:16,274 - __main__ - DEBUG - [server.py:193] - Added format: 720p - No Audio
+2025-05-20 01:27:16,274 - __main__ - DEBUG - [server.py:170] - Processing 480p format
+2025-05-20 01:27:16,274 - __main__ - DEBUG - [server.py:193] - Added format: 480p - No Audio
+2025-05-20 01:27:16,275 - __main__ - DEBUG - [server.py:170] - Processing 360p format
+2025-05-20 01:27:16,275 - __main__ - DEBUG - [server.py:193] - Added format: 360p - Includes Audio
+2025-05-20 01:27:16,275 - __main__ - INFO - [server.py:208] - Added MP3 format option
+2025-05-20 01:27:16,275 - __main__ - INFO - [server.py:219] - Successfully prepared response with 5 formats
+2025-05-20 01:27:16,276 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:27:16] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:27:23,757 - __main__ - INFO - [server.py:110] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:27:23,759 - __main__ - INFO - [server.py:119] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:27:23,789 - __main__ - INFO - [server.py:127] - FFmpeg available: True
+2025-05-20 01:27:23,790 - __main__ - INFO - [server.py:141] - Starting video info extraction with yt-dlp
+2025-05-20 01:27:29,710 - __main__ - INFO - [server.py:144] - Successfully extracted video info
+2025-05-20 01:27:29,710 - __main__ - DEBUG - [server.py:147] - Available formats: 43
+2025-05-20 01:27:29,711 - __main__ - INFO - [server.py:156] - Filtered formats count: 18
+2025-05-20 01:27:29,711 - __main__ - INFO - [server.py:166] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:27:29,711 - __main__ - DEBUG - [server.py:170] - Processing 1080p format
+2025-05-20 01:27:29,712 - __main__ - DEBUG - [server.py:193] - Added format: 1080p - No Audio
+2025-05-20 01:27:29,712 - __main__ - DEBUG - [server.py:170] - Processing 720p format
+2025-05-20 01:27:29,712 - __main__ - DEBUG - [server.py:193] - Added format: 720p - No Audio
+2025-05-20 01:27:29,713 - __main__ - DEBUG - [server.py:170] - Processing 480p format
+2025-05-20 01:27:29,713 - __main__ - DEBUG - [server.py:193] - Added format: 480p - No Audio
+2025-05-20 01:27:29,713 - __main__ - DEBUG - [server.py:170] - Processing 360p format
+2025-05-20 01:27:29,713 - __main__ - DEBUG - [server.py:193] - Added format: 360p - Includes Audio
+2025-05-20 01:27:29,714 - __main__ - INFO - [server.py:208] - Added MP3 format option
+2025-05-20 01:27:29,714 - __main__ - INFO - [server.py:219] - Successfully prepared response with 5 formats
+2025-05-20 01:27:29,716 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:27:29] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:27:37,094 - __main__ - INFO - [server.py:110] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:27:37,095 - __main__ - INFO - [server.py:119] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:27:37,126 - __main__ - INFO - [server.py:127] - FFmpeg available: True
+2025-05-20 01:27:37,126 - __main__ - INFO - [server.py:141] - Starting video info extraction with yt-dlp
+2025-05-20 01:27:42,608 - __main__ - INFO - [server.py:144] - Successfully extracted video info
+2025-05-20 01:27:42,608 - __main__ - DEBUG - [server.py:147] - Available formats: 43
+2025-05-20 01:27:42,608 - __main__ - INFO - [server.py:156] - Filtered formats count: 18
+2025-05-20 01:27:42,609 - __main__ - INFO - [server.py:166] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:27:42,609 - __main__ - DEBUG - [server.py:170] - Processing 1080p format
+2025-05-20 01:27:42,609 - __main__ - DEBUG - [server.py:193] - Added format: 1080p - No Audio
+2025-05-20 01:27:42,609 - __main__ - DEBUG - [server.py:170] - Processing 720p format
+2025-05-20 01:27:42,610 - __main__ - DEBUG - [server.py:193] - Added format: 720p - No Audio
+2025-05-20 01:27:42,610 - __main__ - DEBUG - [server.py:170] - Processing 480p format
+2025-05-20 01:27:42,610 - __main__ - DEBUG - [server.py:193] - Added format: 480p - No Audio
+2025-05-20 01:27:42,610 - __main__ - DEBUG - [server.py:170] - Processing 360p format
+2025-05-20 01:27:42,611 - __main__ - DEBUG - [server.py:193] - Added format: 360p - Includes Audio
+2025-05-20 01:27:42,615 - __main__ - INFO - [server.py:208] - Added MP3 format option
+2025-05-20 01:27:42,616 - __main__ - INFO - [server.py:219] - Successfully prepared response with 5 formats
+2025-05-20 01:27:42,618 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:27:42] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:29:18,980 - werkzeug - INFO - [_internal.py:97] -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 01:29:19,181 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:29:21,030 - __main__ - INFO - [server.py:318] - Server starting on http://localhost:3001
+2025-05-20 01:29:21,031 - __main__ - INFO - [server.py:319] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:29:21,052 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:29:21,061 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:29:52,839 - __main__ - INFO - [server.py:318] - Server starting on http://localhost:3001
+2025-05-20 01:29:52,840 - __main__ - INFO - [server.py:319] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:29:52,872 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:29:52,872 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:29:52,888 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:29:54,205 - __main__ - INFO - [server.py:318] - Server starting on http://localhost:3001
+2025-05-20 01:29:54,206 - __main__ - INFO - [server.py:319] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:29:54,224 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:29:54,232 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:29:57,229 - __main__ - INFO - [server.py:101] - Serving index.html
+2025-05-20 01:29:57,280 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:29:57] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:29:57,329 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:29:57] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:29:57,495 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:29:57] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:30:01,349 - __main__ - INFO - [server.py:116] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:30:01,350 - __main__ - INFO - [server.py:125] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:30:01,382 - __main__ - INFO - [server.py:133] - FFmpeg available: True
+2025-05-20 01:30:01,382 - __main__ - INFO - [server.py:147] - Starting video info extraction with yt-dlp
+2025-05-20 01:30:07,882 - __main__ - INFO - [server.py:150] - Successfully extracted video info
+2025-05-20 01:30:07,882 - __main__ - DEBUG - [server.py:153] - Available formats: 43
+2025-05-20 01:30:07,882 - __main__ - INFO - [server.py:162] - Filtered formats count: 18
+2025-05-20 01:30:07,883 - __main__ - INFO - [server.py:172] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:30:07,883 - __main__ - DEBUG - [server.py:176] - Processing 1080p format
+2025-05-20 01:30:07,883 - __main__ - DEBUG - [server.py:199] - Added format: 1080p - No Audio
+2025-05-20 01:30:07,884 - __main__ - DEBUG - [server.py:176] - Processing 720p format
+2025-05-20 01:30:07,884 - __main__ - DEBUG - [server.py:199] - Added format: 720p - No Audio
+2025-05-20 01:30:07,884 - __main__ - DEBUG - [server.py:176] - Processing 480p format
+2025-05-20 01:30:07,885 - __main__ - DEBUG - [server.py:199] - Added format: 480p - No Audio
+2025-05-20 01:30:07,886 - __main__ - DEBUG - [server.py:176] - Processing 360p format
+2025-05-20 01:30:07,887 - __main__ - DEBUG - [server.py:199] - Added format: 360p - Includes Audio
+2025-05-20 01:30:07,888 - __main__ - INFO - [server.py:214] - Added MP3 format option
+2025-05-20 01:30:07,889 - __main__ - INFO - [server.py:225] - Successfully prepared response with 5 formats
+2025-05-20 01:30:07,891 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:30:07] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:30:13,316 - __main__ - INFO - [server.py:251] - Download request - URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1, format: 137, type: video
+2025-05-20 01:30:13,317 - __main__ - INFO - [server.py:260] - Cleaned URL for download: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:30:13,350 - __main__ - INFO - [server.py:276] - Using format specification: 137+bestaudio/best
+2025-05-20 01:30:13,455 - __main__ - INFO - [server.py:288] - Starting download
+2025-05-20 01:30:21,164 - __main__ - INFO - [server.py:290] - Download completed
+2025-05-20 01:30:21,165 - __main__ - INFO - [server.py:294] - Downloaded file: C:\Users\GAMING~1\AppData\Local\Temp\tmpv8gdmx7m\hurts so good (slowed to perfection) - astrid s [edit audio].mkv
+2025-05-20 01:30:21,172 - __main__ - ERROR - [server.py:95] - Download error: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\GAMING~1\\AppData\\Local\\Temp\\tmpv8gdmx7m\\hurts so good (slowed to perfection) - astrid s [edit audio].mkv'
+2025-05-20 01:30:21,181 - __main__ - ERROR - [server.py:96] - Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 625, in _rmtree_unsafe
+    os.unlink(fullname)
+    ~~~~~~~~~^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\GAMING~1\\AppData\\Local\\Temp\\tmpv8gdmx7m\\hurts so good (slowed to perfection) - astrid s [edit audio].mkv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 266, in youtube_download
+    with tempfile.TemporaryDirectory() as temp_dir:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 790, in rmtree
+    return _rmtree_unsafe(path, onexc)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 629, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+    ~~~~~~~~~~^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\GAMING~1\\AppData\\Local\\Temp\\tmpv8gdmx7m\\hurts so good (slowed to perfection) - astrid s [edit audio].mkv'
+
+2025-05-20 01:30:21,195 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:30:21] "[35m[1mGET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137&type=video HTTP/1.1[0m" 500 -
+2025-05-20 01:32:00,325 - __main__ - INFO - [server.py:340] - Server starting on http://localhost:3001
+2025-05-20 01:32:00,326 - __main__ - INFO - [server.py:341] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:32:00,369 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:32:00,370 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:32:00,374 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:32:01,872 - __main__ - INFO - [server.py:340] - Server starting on http://localhost:3001
+2025-05-20 01:32:01,873 - __main__ - INFO - [server.py:341] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:32:01,897 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:32:01,909 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:32:06,064 - __main__ - INFO - [server.py:101] - Serving index.html
+2025-05-20 01:32:06,163 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:32:06] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:32:06,206 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:32:06] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:32:06,335 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:32:06] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:32:13,881 - __main__ - INFO - [server.py:116] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:32:13,882 - __main__ - INFO - [server.py:125] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:32:14,039 - __main__ - INFO - [server.py:133] - FFmpeg available: True
+2025-05-20 01:32:14,040 - __main__ - INFO - [server.py:147] - Starting video info extraction with yt-dlp
+2025-05-20 01:32:20,378 - __main__ - INFO - [server.py:150] - Successfully extracted video info
+2025-05-20 01:32:20,379 - __main__ - DEBUG - [server.py:153] - Available formats: 43
+2025-05-20 01:32:20,379 - __main__ - INFO - [server.py:162] - Filtered formats count: 18
+2025-05-20 01:32:20,379 - __main__ - INFO - [server.py:172] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:32:20,379 - __main__ - DEBUG - [server.py:176] - Processing 1080p format
+2025-05-20 01:32:20,380 - __main__ - DEBUG - [server.py:199] - Added format: 1080p - No Audio
+2025-05-20 01:32:20,380 - __main__ - DEBUG - [server.py:176] - Processing 720p format
+2025-05-20 01:32:20,380 - __main__ - DEBUG - [server.py:199] - Added format: 720p - No Audio
+2025-05-20 01:32:20,381 - __main__ - DEBUG - [server.py:176] - Processing 480p format
+2025-05-20 01:32:20,381 - __main__ - DEBUG - [server.py:199] - Added format: 480p - No Audio
+2025-05-20 01:32:20,381 - __main__ - DEBUG - [server.py:176] - Processing 360p format
+2025-05-20 01:32:20,381 - __main__ - DEBUG - [server.py:199] - Added format: 360p - Includes Audio
+2025-05-20 01:32:20,382 - __main__ - INFO - [server.py:214] - Added MP3 format option
+2025-05-20 01:32:20,382 - __main__ - INFO - [server.py:225] - Successfully prepared response with 5 formats
+2025-05-20 01:32:20,383 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:32:20] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:32:23,305 - __main__ - INFO - [server.py:251] - Download request - URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1, format: 137, type: video
+2025-05-20 01:32:23,306 - __main__ - INFO - [server.py:260] - Cleaned URL for download: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:32:23,344 - __main__ - INFO - [server.py:276] - Using format specification: 137+bestaudio/best
+2025-05-20 01:32:23,474 - __main__ - INFO - [server.py:295] - Starting download
+2025-05-20 01:32:29,108 - __main__ - INFO - [server.py:290] - Download progress:   0.0%
+2025-05-20 01:32:29,110 - __main__ - INFO - [server.py:290] - Download progress:   0.0%
+2025-05-20 01:32:29,111 - __main__ - INFO - [server.py:290] - Download progress:   0.1%
+2025-05-20 01:32:29,112 - __main__ - INFO - [server.py:290] - Download progress:   0.1%
+2025-05-20 01:32:29,114 - __main__ - INFO - [server.py:290] - Download progress:   0.2%
+2025-05-20 01:32:29,117 - __main__ - INFO - [server.py:290] - Download progress:   0.5%
+2025-05-20 01:32:29,125 - __main__ - INFO - [server.py:290] - Download progress:   1.0%
+2025-05-20 01:32:29,135 - __main__ - INFO - [server.py:290] - Download progress:   1.9%
+2025-05-20 01:32:29,304 - __main__ - INFO - [server.py:290] - Download progress:   3.8%
+2025-05-20 01:32:29,396 - __main__ - INFO - [server.py:290] - Download progress:   7.7%
+2025-05-20 01:32:29,484 - __main__ - INFO - [server.py:290] - Download progress:  15.3%
+2025-05-20 01:32:29,665 - __main__ - INFO - [server.py:290] - Download progress:  30.7%
+2025-05-20 01:32:30,030 - __main__ - INFO - [server.py:290] - Download progress:  61.3%
+2025-05-20 01:32:30,212 - __main__ - INFO - [server.py:290] - Download progress:  74.2%
+2025-05-20 01:32:30,236 - __main__ - INFO - [server.py:290] - Download progress:  74.2%
+2025-05-20 01:32:30,237 - __main__ - INFO - [server.py:290] - Download progress:  74.3%
+2025-05-20 01:32:30,238 - __main__ - INFO - [server.py:290] - Download progress:  74.3%
+2025-05-20 01:32:30,239 - __main__ - INFO - [server.py:290] - Download progress:  74.4%
+2025-05-20 01:32:30,241 - __main__ - INFO - [server.py:290] - Download progress:  74.5%
+2025-05-20 01:32:30,242 - __main__ - INFO - [server.py:290] - Download progress:  74.7%
+2025-05-20 01:32:30,249 - __main__ - INFO - [server.py:290] - Download progress:  75.2%
+2025-05-20 01:32:30,274 - __main__ - INFO - [server.py:290] - Download progress:  76.1%
+2025-05-20 01:32:30,301 - __main__ - INFO - [server.py:290] - Download progress:  78.1%
+2025-05-20 01:32:30,339 - __main__ - INFO - [server.py:290] - Download progress:  81.9%
+2025-05-20 01:32:30,458 - __main__ - INFO - [server.py:290] - Download progress:  89.6%
+2025-05-20 01:32:30,625 - __main__ - INFO - [server.py:290] - Download progress: 100.0%
+2025-05-20 01:32:30,628 - __main__ - INFO - [server.py:290] - Download progress: 100.0%
+2025-05-20 01:32:30,657 - __main__ - INFO - [server.py:290] - Download progress:   0.1%
+2025-05-20 01:32:30,658 - __main__ - INFO - [server.py:290] - Download progress:   0.3%
+2025-05-20 01:32:30,659 - __main__ - INFO - [server.py:290] - Download progress:   0.8%
+2025-05-20 01:32:30,660 - __main__ - INFO - [server.py:290] - Download progress:   1.6%
+2025-05-20 01:32:30,662 - __main__ - INFO - [server.py:290] - Download progress:   3.3%
+2025-05-20 01:32:30,664 - __main__ - INFO - [server.py:290] - Download progress:   6.8%
+2025-05-20 01:32:30,665 - __main__ - INFO - [server.py:290] - Download progress:  13.7%
+2025-05-20 01:32:30,681 - __main__ - INFO - [server.py:290] - Download progress:  27.5%
+2025-05-20 01:32:30,711 - __main__ - INFO - [server.py:290] - Download progress:  55.0%
+2025-05-20 01:32:30,759 - __main__ - INFO - [server.py:290] - Download progress: 100.0%
+2025-05-20 01:32:30,761 - __main__ - INFO - [server.py:290] - Download progress: 100.0%
+2025-05-20 01:32:31,123 - __main__ - INFO - [server.py:300] - Download completed
+2025-05-20 01:32:31,123 - __main__ - INFO - [server.py:308] - Downloaded file: C:\Users\GAMING~1\AppData\Local\Temp\tmp1kge2zii\hurts so good (slowed to perfection) - astrid s [edit audio].mkv
+2025-05-20 01:32:31,128 - __main__ - ERROR - [server.py:95] - Download error: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\GAMING~1\\AppData\\Local\\Temp\\tmp1kge2zii\\hurts so good (slowed to perfection) - astrid s [edit audio].mkv'
+2025-05-20 01:32:31,135 - __main__ - ERROR - [server.py:96] - Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 625, in _rmtree_unsafe
+    os.unlink(fullname)
+    ~~~~~~~~~^^^^^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\GAMING~1\\AppData\\Local\\Temp\\tmp1kge2zii\\hurts so good (slowed to perfection) - astrid s [edit audio].mkv'
+
+During handling of the above exception, another exception occurred:
+
+Traceback (most recent call last):
+  File "C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\server.py", line 266, in youtube_download
+    with tempfile.TemporaryDirectory() as temp_dir:
+         ~~~~~~~~~~~~~~~~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 950, in __exit__
+    self.cleanup()
+    ~~~~~~~~~~~~^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 954, in cleanup
+    self._rmtree(self.name, ignore_errors=self._ignore_cleanup_errors)
+    ~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 934, in _rmtree
+    _shutil.rmtree(name, onexc=onexc)
+    ~~~~~~~~~~~~~~^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 790, in rmtree
+    return _rmtree_unsafe(path, onexc)
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\shutil.py", line 629, in _rmtree_unsafe
+    onexc(os.unlink, fullname, err)
+    ~~~~~^^^^^^^^^^^^^^^^^^^^^^^^^^
+  File "C:\Users\Gaming Nove\AppData\Local\Programs\Python\Python313\Lib\tempfile.py", line 909, in onexc
+    _os.unlink(path)
+    ~~~~~~~~~~^^^^^^
+PermissionError: [WinError 32] The process cannot access the file because it is being used by another process: 'C:\\Users\\GAMING~1\\AppData\\Local\\Temp\\tmp1kge2zii\\hurts so good (slowed to perfection) - astrid s [edit audio].mkv'
+
+2025-05-20 01:32:31,141 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:32:31] "[35m[1mGET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137&type=video HTTP/1.1[0m" 500 -
+2025-05-20 01:34:03,374 - werkzeug - INFO - [_internal.py:97] -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 01:34:03,563 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:34:05,334 - __main__ - INFO - [server.py:423] - Server starting on http://localhost:3001
+2025-05-20 01:34:05,334 - __main__ - INFO - [server.py:424] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:34:05,349 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:34:05,357 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:34:25,400 - __main__ - INFO - [server.py:423] - Server starting on http://localhost:3001
+2025-05-20 01:34:25,401 - __main__ - INFO - [server.py:424] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:34:25,429 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:34:25,429 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:34:25,432 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:34:26,591 - __main__ - INFO - [server.py:423] - Server starting on http://localhost:3001
+2025-05-20 01:34:26,592 - __main__ - INFO - [server.py:424] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:34:26,610 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:34:26,620 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:34:28,829 - __main__ - INFO - [server.py:132] - Serving index.html
+2025-05-20 01:34:28,892 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:34:28] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:34:28,949 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:34:28] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:34:29,094 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:34:29] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:34:34,993 - __main__ - INFO - [server.py:147] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:34:34,994 - __main__ - INFO - [server.py:156] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:34:35,029 - __main__ - INFO - [server.py:164] - FFmpeg available: True
+2025-05-20 01:34:35,030 - __main__ - INFO - [server.py:178] - Starting video info extraction with yt-dlp
+2025-05-20 01:34:41,542 - __main__ - INFO - [server.py:181] - Successfully extracted video info
+2025-05-20 01:34:41,542 - __main__ - DEBUG - [server.py:184] - Available formats: 43
+2025-05-20 01:34:41,543 - __main__ - INFO - [server.py:193] - Filtered formats count: 18
+2025-05-20 01:34:41,543 - __main__ - INFO - [server.py:203] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:34:41,543 - __main__ - DEBUG - [server.py:207] - Processing 1080p format
+2025-05-20 01:34:41,544 - __main__ - DEBUG - [server.py:230] - Added format: 1080p - No Audio
+2025-05-20 01:34:41,544 - __main__ - DEBUG - [server.py:207] - Processing 720p format
+2025-05-20 01:34:41,544 - __main__ - DEBUG - [server.py:230] - Added format: 720p - No Audio
+2025-05-20 01:34:41,544 - __main__ - DEBUG - [server.py:207] - Processing 480p format
+2025-05-20 01:34:41,545 - __main__ - DEBUG - [server.py:230] - Added format: 480p - No Audio
+2025-05-20 01:34:41,545 - __main__ - DEBUG - [server.py:207] - Processing 360p format
+2025-05-20 01:34:41,545 - __main__ - DEBUG - [server.py:230] - Added format: 360p - Includes Audio
+2025-05-20 01:34:41,545 - __main__ - INFO - [server.py:245] - Added MP3 format option
+2025-05-20 01:34:41,546 - __main__ - INFO - [server.py:256] - Successfully prepared response with 5 formats
+2025-05-20 01:34:41,547 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:34:41] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:34:44,967 - __main__ - INFO - [server.py:282] - Download request - URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1, format: 137, type: video
+2025-05-20 01:34:44,968 - __main__ - INFO - [server.py:291] - Cleaned URL for download: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:34:44,971 - __main__ - INFO - [server.py:307] - Created temporary directory: C:\Users\GAMING~1\AppData\Local\Temp\youtube_download_2e7033fc-131a-4850-ab72-a60930a01b21_8owo_igy
+2025-05-20 01:34:45,004 - __main__ - INFO - [server.py:318] - Using format specification: 137+bestaudio/best
+2025-05-20 01:34:45,108 - __main__ - INFO - [server.py:336] - Starting download
+2025-05-20 01:34:50,213 - __main__ - INFO - [server.py:332] - Download progress:   0.0%
+2025-05-20 01:34:50,214 - __main__ - INFO - [server.py:332] - Download progress:   0.0%
+2025-05-20 01:34:50,215 - __main__ - INFO - [server.py:332] - Download progress:   0.1%
+2025-05-20 01:34:50,216 - __main__ - INFO - [server.py:332] - Download progress:   0.1%
+2025-05-20 01:34:50,226 - __main__ - INFO - [server.py:332] - Download progress:   0.2%
+2025-05-20 01:34:50,227 - __main__ - INFO - [server.py:332] - Download progress:   0.5%
+2025-05-20 01:34:50,229 - __main__ - INFO - [server.py:332] - Download progress:   1.0%
+2025-05-20 01:34:50,251 - __main__ - INFO - [server.py:332] - Download progress:   1.9%
+2025-05-20 01:34:50,268 - __main__ - INFO - [server.py:332] - Download progress:   3.8%
+2025-05-20 01:34:50,313 - __main__ - INFO - [server.py:332] - Download progress:   7.7%
+2025-05-20 01:34:50,404 - __main__ - INFO - [server.py:332] - Download progress:  15.3%
+2025-05-20 01:34:50,594 - __main__ - INFO - [server.py:332] - Download progress:  30.7%
+2025-05-20 01:34:50,969 - __main__ - INFO - [server.py:332] - Download progress:  61.3%
+2025-05-20 01:34:51,150 - __main__ - INFO - [server.py:332] - Download progress:  73.1%
+2025-05-20 01:34:51,286 - __main__ - INFO - [server.py:332] - Download progress:  73.1%
+2025-05-20 01:34:51,287 - __main__ - INFO - [server.py:332] - Download progress:  73.1%
+2025-05-20 01:34:51,288 - __main__ - INFO - [server.py:332] - Download progress:  73.1%
+2025-05-20 01:34:51,289 - __main__ - INFO - [server.py:332] - Download progress:  73.2%
+2025-05-20 01:34:51,290 - __main__ - INFO - [server.py:332] - Download progress:  73.3%
+2025-05-20 01:34:51,291 - __main__ - INFO - [server.py:332] - Download progress:  73.6%
+2025-05-20 01:34:51,298 - __main__ - INFO - [server.py:332] - Download progress:  74.0%
+2025-05-20 01:34:51,308 - __main__ - INFO - [server.py:332] - Download progress:  75.0%
+2025-05-20 01:34:51,335 - __main__ - INFO - [server.py:332] - Download progress:  76.9%
+2025-05-20 01:34:51,384 - __main__ - INFO - [server.py:332] - Download progress:  80.7%
+2025-05-20 01:34:51,479 - __main__ - INFO - [server.py:332] - Download progress:  88.4%
+2025-05-20 01:34:51,620 - __main__ - INFO - [server.py:332] - Download progress: 100.0%
+2025-05-20 01:34:51,622 - __main__ - INFO - [server.py:332] - Download progress: 100.0%
+2025-05-20 01:34:51,680 - __main__ - INFO - [server.py:332] - Download progress:   0.1%
+2025-05-20 01:34:51,681 - __main__ - INFO - [server.py:332] - Download progress:   0.3%
+2025-05-20 01:34:51,682 - __main__ - INFO - [server.py:332] - Download progress:   0.8%
+2025-05-20 01:34:51,684 - __main__ - INFO - [server.py:332] - Download progress:   1.6%
+2025-05-20 01:34:51,686 - __main__ - INFO - [server.py:332] - Download progress:   3.3%
+2025-05-20 01:34:51,688 - __main__ - INFO - [server.py:332] - Download progress:   6.8%
+2025-05-20 01:34:51,690 - __main__ - INFO - [server.py:332] - Download progress:  13.7%
+2025-05-20 01:34:51,703 - __main__ - INFO - [server.py:332] - Download progress:  27.5%
+2025-05-20 01:34:51,722 - __main__ - INFO - [server.py:332] - Download progress:  55.0%
+2025-05-20 01:34:51,758 - __main__ - INFO - [server.py:332] - Download progress: 100.0%
+2025-05-20 01:34:51,761 - __main__ - INFO - [server.py:332] - Download progress: 100.0%
+2025-05-20 01:34:51,933 - __main__ - INFO - [server.py:341] - Download completed
+2025-05-20 01:34:51,934 - __main__ - INFO - [server.py:349] - Downloaded file: C:\Users\GAMING~1\AppData\Local\Temp\youtube_download_2e7033fc-131a-4850-ab72-a60930a01b21_8owo_igy\hurts so good (slowed to perfection) - astrid s [edit audio].mkv
+2025-05-20 01:34:51,936 - __main__ - INFO - [server.py:356] - Moved file to: C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\downloads\hurts so good (slowed to perfection) - astrid s [edit audio]_20250520_013451_63e4ae26.mkv
+2025-05-20 01:34:51,938 - __main__ - INFO - [server.py:390] - Cleaned up temporary directory: C:\Users\GAMING~1\AppData\Local\Temp\youtube_download_2e7033fc-131a-4850-ab72-a60930a01b21_8owo_igy
+2025-05-20 01:34:51,941 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:34:51] "GET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137&type=video HTTP/1.1" 200 -
+2025-05-20 01:34:52,940 - __main__ - INFO - [server.py:371] - Cleaned up file: hurts so good (slowed to perfection) - astrid s [edit audio]_20250520_013451_63e4ae26.mkv
+2025-05-20 01:43:49,052 - __main__ - INFO - [server.py:441] - Server starting on http://localhost:3001
+2025-05-20 01:43:49,053 - __main__ - INFO - [server.py:442] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:43:49,066 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:43:49,067 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:43:53,119 - __main__ - INFO - [server.py:211] - Serving index.html
+2025-05-20 01:43:53,188 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:43:53] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:43:53,261 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:43:53] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:43:53,374 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:43:53] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:44:02,405 - __main__ - INFO - [server.py:211] - Serving index.html
+2025-05-20 01:44:02,406 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:44:02] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:44:02,458 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:44:02] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:44:02,672 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:44:02] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:44:11,094 - __main__ - INFO - [server.py:211] - Serving index.html
+2025-05-20 01:44:11,095 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:44:11] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:44:11,143 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:44:11] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:44:11,359 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:44:11] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:46:14,045 - __main__ - INFO - [server.py:441] - Server starting on http://localhost:3001
+2025-05-20 01:46:14,046 - __main__ - INFO - [server.py:442] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:46:14,060 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:46:14,061 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:46:16,504 - __main__ - INFO - [server.py:211] - Serving index.html
+2025-05-20 01:46:16,592 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:46:16] "GET / HTTP/1.1" 200 -
+2025-05-20 01:46:16,650 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:46:16] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:46:16,798 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:46:16] "GET /Script.js HTTP/1.1" 200 -
+2025-05-20 01:46:19,086 - __main__ - INFO - [server.py:226] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:46:19,087 - __main__ - INFO - [server.py:243] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:46:26,673 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:46:26] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:46:26,984 - __main__ - INFO - [server.py:226] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:46:26,985 - __main__ - INFO - [server.py:238] - Returning cached video info
+2025-05-20 01:46:26,985 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:46:26] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:47:56,865 - __main__ - INFO - [server.py:441] - Server starting on http://localhost:3001
+2025-05-20 01:47:56,866 - __main__ - INFO - [server.py:442] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:47:56,879 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:47:56,880 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:47:58,947 - __main__ - INFO - [server.py:211] - Serving index.html
+2025-05-20 01:47:59,052 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:47:59] "GET / HTTP/1.1" 200 -
+2025-05-20 01:47:59,118 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:47:59] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:47:59,244 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:47:59] "GET /Script.js HTTP/1.1" 200 -
+2025-05-20 01:48:04,284 - __main__ - INFO - [server.py:226] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:48:04,290 - __main__ - INFO - [server.py:243] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:48:11,034 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:48:11] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:48:11,353 - __main__ - INFO - [server.py:226] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:48:11,354 - __main__ - INFO - [server.py:238] - Returning cached video info
+2025-05-20 01:48:11,355 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:48:11] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:50:42,881 - __main__ - INFO - [server.py:441] - Server starting on http://localhost:3001
+2025-05-20 01:50:42,881 - __main__ - INFO - [server.py:442] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:50:42,895 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:50:42,895 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:50:45,225 - __main__ - INFO - [server.py:211] - Serving index.html
+2025-05-20 01:50:45,293 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:50:45] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:50:45,347 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:50:45] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:50:45,494 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:50:45] "GET /Script.js HTTP/1.1" 200 -
+2025-05-20 01:50:47,768 - __main__ - INFO - [server.py:226] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:50:47,769 - __main__ - INFO - [server.py:243] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:50:54,429 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:50:54] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:50:54,432 - __main__ - INFO - [server.py:226] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1
+2025-05-20 01:50:54,432 - __main__ - INFO - [server.py:238] - Returning cached video info
+2025-05-20 01:50:54,433 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:50:54] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1 HTTP/1.1" 200 -
+2025-05-20 01:56:24,305 - __main__ - INFO - [server.py:340] - Server starting on http://localhost:3001
+2025-05-20 01:56:24,305 - __main__ - INFO - [server.py:341] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:56:24,401 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:56:24,402 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:56:24,404 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:56:27,090 - __main__ - INFO - [server.py:340] - Server starting on http://localhost:3001
+2025-05-20 01:56:27,091 - __main__ - INFO - [server.py:341] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:56:27,115 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:56:27,133 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:56:28,070 - __main__ - INFO - [server.py:101] - Serving index.html
+2025-05-20 01:56:28,136 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:56:28] "GET / HTTP/1.1" 200 -
+2025-05-20 01:56:28,178 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:56:28] "GET /styles.css HTTP/1.1" 200 -
+2025-05-20 01:56:28,337 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:56:28] "GET /script.js HTTP/1.1" 200 -
+2025-05-20 01:56:38,962 - __main__ - INFO - [server.py:340] - Server starting on http://localhost:3001
+2025-05-20 01:56:38,963 - __main__ - INFO - [server.py:341] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:56:38,990 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:56:38,991 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:56:38,993 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:56:40,497 - __main__ - INFO - [server.py:340] - Server starting on http://localhost:3001
+2025-05-20 01:56:40,497 - __main__ - INFO - [server.py:341] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:56:40,514 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:56:40,521 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:56:43,212 - __main__ - INFO - [server.py:101] - Serving index.html
+2025-05-20 01:56:43,273 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:56:43] "GET / HTTP/1.1" 200 -
+2025-05-20 01:56:43,315 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:56:43] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:56:43,642 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:56:43] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:56:46,122 - __main__ - INFO - [server.py:116] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:56:46,123 - __main__ - INFO - [server.py:125] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:56:46,293 - __main__ - INFO - [server.py:133] - FFmpeg available: True
+2025-05-20 01:56:46,294 - __main__ - INFO - [server.py:147] - Starting video info extraction with yt-dlp
+2025-05-20 01:56:47,931 - werkzeug - INFO - [_internal.py:97] -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 01:56:48,079 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:56:49,373 - __main__ - INFO - [server.py:390] - Server starting on http://localhost:3001
+2025-05-20 01:56:49,374 - __main__ - INFO - [server.py:391] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:56:49,401 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:56:49,413 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:56:49,541 - __main__ - INFO - [server.py:136] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:56:49,542 - __main__ - INFO - [server.py:145] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:56:49,576 - __main__ - INFO - [server.py:153] - FFmpeg available: True
+2025-05-20 01:56:49,577 - __main__ - INFO - [server.py:167] - Starting video info extraction with yt-dlp
+2025-05-20 01:56:55,834 - __main__ - INFO - [server.py:170] - Successfully extracted video info
+2025-05-20 01:56:55,834 - __main__ - DEBUG - [server.py:173] - Available formats: 43
+2025-05-20 01:56:55,835 - __main__ - INFO - [server.py:182] - Filtered formats count: 18
+2025-05-20 01:56:55,835 - __main__ - INFO - [server.py:192] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:56:55,835 - __main__ - DEBUG - [server.py:196] - Processing 1080p format
+2025-05-20 01:56:55,836 - __main__ - DEBUG - [server.py:219] - Added format: 1080p - No Audio
+2025-05-20 01:56:55,836 - __main__ - DEBUG - [server.py:196] - Processing 720p format
+2025-05-20 01:56:55,836 - __main__ - DEBUG - [server.py:219] - Added format: 720p - No Audio
+2025-05-20 01:56:55,836 - __main__ - DEBUG - [server.py:196] - Processing 480p format
+2025-05-20 01:56:55,837 - __main__ - DEBUG - [server.py:219] - Added format: 480p - No Audio
+2025-05-20 01:56:55,837 - __main__ - DEBUG - [server.py:196] - Processing 360p format
+2025-05-20 01:56:55,837 - __main__ - DEBUG - [server.py:219] - Added format: 360p - Includes Audio
+2025-05-20 01:56:55,837 - __main__ - INFO - [server.py:234] - Added MP3 format option
+2025-05-20 01:56:55,838 - __main__ - INFO - [server.py:245] - Successfully prepared response with 5 formats
+2025-05-20 01:56:55,839 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:56:55] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:57:00,241 - __main__ - INFO - [server.py:273] - Download request - ID: 1fddb4fb-2945-47d2-9812-4445c15c7621, URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1, format: 137, type: video
+2025-05-20 01:57:00,242 - __main__ - INFO - [server.py:282] - Cleaned URL for download: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:57:00,275 - __main__ - INFO - [server.py:308] - Using format specification: 137+bestaudio/best
+2025-05-20 01:57:00,373 - __main__ - INFO - [server.py:326] - Starting download for 1fddb4fb-2945-47d2-9812-4445c15c7621
+2025-05-20 01:57:05,582 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.0%
+2025-05-20 01:57:05,584 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.0%
+2025-05-20 01:57:05,586 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.1%
+2025-05-20 01:57:05,589 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.1%
+2025-05-20 01:57:05,592 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.2%
+2025-05-20 01:57:05,595 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.5%
+2025-05-20 01:57:05,598 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   1.0%
+2025-05-20 01:57:05,605 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   1.9%
+2025-05-20 01:57:05,627 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   3.8%
+2025-05-20 01:57:05,671 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   7.7%
+2025-05-20 01:57:05,760 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  15.3%
+2025-05-20 01:57:05,940 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  30.7%
+2025-05-20 01:57:06,323 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  61.3%
+2025-05-20 01:57:06,590 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  76.2%
+2025-05-20 01:57:06,685 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  76.2%
+2025-05-20 01:57:06,687 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  76.3%
+2025-05-20 01:57:06,689 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  76.3%
+2025-05-20 01:57:06,691 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  76.4%
+2025-05-20 01:57:06,692 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  76.5%
+2025-05-20 01:57:06,693 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  76.7%
+2025-05-20 01:57:06,702 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  77.2%
+2025-05-20 01:57:06,720 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  78.1%
+2025-05-20 01:57:06,757 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  80.1%
+2025-05-20 01:57:06,830 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  83.9%
+2025-05-20 01:57:06,931 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  91.6%
+2025-05-20 01:57:07,024 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621: 100.0%
+2025-05-20 01:57:07,027 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621: 100.0%
+2025-05-20 01:57:07,046 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.1%
+2025-05-20 01:57:07,048 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.3%
+2025-05-20 01:57:07,050 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   0.8%
+2025-05-20 01:57:07,052 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   1.6%
+2025-05-20 01:57:07,053 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   3.3%
+2025-05-20 01:57:07,055 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:   6.8%
+2025-05-20 01:57:07,058 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  13.7%
+2025-05-20 01:57:07,065 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  27.5%
+2025-05-20 01:57:07,091 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621:  55.0%
+2025-05-20 01:57:07,124 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621: 100.0%
+2025-05-20 01:57:07,127 - __main__ - INFO - [server.py:322] - Download progress for 1fddb4fb-2945-47d2-9812-4445c15c7621: 100.0%
+2025-05-20 01:57:07,703 - __main__ - INFO - [server.py:331] - Download completed for 1fddb4fb-2945-47d2-9812-4445c15c7621
+2025-05-20 01:57:07,723 - __main__ - INFO - [server.py:339] - Downloaded file for 1fddb4fb-2945-47d2-9812-4445c15c7621: C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\downloads\1fddb4fb-2945-47d2-9812-4445c15c7621\hurts so good (slowed to perfection) - astrid s [edit audio].mkv
+2025-05-20 01:57:07,784 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:57:07] "GET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137&type=video HTTP/1.1" 200 -
+2025-05-20 01:57:17,879 - werkzeug - INFO - [_internal.py:97] -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 01:57:17,998 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:57:19,311 - __main__ - INFO - [server.py:390] - Server starting on http://localhost:3001
+2025-05-20 01:57:19,311 - __main__ - INFO - [server.py:391] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:57:19,327 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:57:19,333 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:57:23,772 - __main__ - INFO - [server.py:390] - Server starting on http://localhost:3001
+2025-05-20 01:57:23,772 - __main__ - INFO - [server.py:391] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:57:23,798 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 01:57:23,799 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 01:57:23,801 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 01:57:25,240 - __main__ - INFO - [server.py:390] - Server starting on http://localhost:3001
+2025-05-20 01:57:25,241 - __main__ - INFO - [server.py:391] - Open your browser and go to: http://localhost:3001
+2025-05-20 01:57:25,259 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 01:57:25,269 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 01:57:25,935 - __main__ - INFO - [server.py:121] - Serving index.html
+2025-05-20 01:57:25,988 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:57:25] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 01:57:26,029 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:57:26] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 01:57:26,189 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:57:26] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 01:57:28,477 - __main__ - INFO - [server.py:136] - Received YouTube info request for URL: https://youtu.be/93hbPwOda6Y
+2025-05-20 01:57:28,478 - __main__ - INFO - [server.py:145] - Cleaned URL: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:57:28,540 - __main__ - INFO - [server.py:153] - FFmpeg available: True
+2025-05-20 01:57:28,541 - __main__ - INFO - [server.py:167] - Starting video info extraction with yt-dlp
+2025-05-20 01:57:34,395 - __main__ - INFO - [server.py:170] - Successfully extracted video info
+2025-05-20 01:57:34,396 - __main__ - DEBUG - [server.py:173] - Available formats: 43
+2025-05-20 01:57:34,396 - __main__ - INFO - [server.py:182] - Filtered formats count: 18
+2025-05-20 01:57:34,396 - __main__ - INFO - [server.py:192] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 01:57:34,397 - __main__ - DEBUG - [server.py:196] - Processing 1080p format
+2025-05-20 01:57:34,397 - __main__ - DEBUG - [server.py:219] - Added format: 1080p - No Audio
+2025-05-20 01:57:34,397 - __main__ - DEBUG - [server.py:196] - Processing 720p format
+2025-05-20 01:57:34,398 - __main__ - DEBUG - [server.py:219] - Added format: 720p - No Audio
+2025-05-20 01:57:34,398 - __main__ - DEBUG - [server.py:196] - Processing 480p format
+2025-05-20 01:57:34,398 - __main__ - DEBUG - [server.py:219] - Added format: 480p - No Audio
+2025-05-20 01:57:34,398 - __main__ - DEBUG - [server.py:196] - Processing 360p format
+2025-05-20 01:57:34,398 - __main__ - DEBUG - [server.py:219] - Added format: 360p - Includes Audio
+2025-05-20 01:57:34,399 - __main__ - INFO - [server.py:234] - Added MP3 format option
+2025-05-20 01:57:34,399 - __main__ - INFO - [server.py:245] - Successfully prepared response with 5 formats
+2025-05-20 01:57:34,400 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:57:34] "GET /api/youtube/info?url=https://youtu.be/93hbPwOda6Y HTTP/1.1" 200 -
+2025-05-20 01:57:37,670 - __main__ - INFO - [server.py:273] - Download request - ID: b722ab4e-b2da-4e98-8a9e-8075a5463d3a, URL: https://youtu.be/93hbPwOda6Y?si=_kyn_J9fhJnrClU1, format: 137, type: video
+2025-05-20 01:57:37,671 - __main__ - INFO - [server.py:282] - Cleaned URL for download: https://www.youtube.com/watch?v=93hbPwOda6Y
+2025-05-20 01:57:37,706 - __main__ - INFO - [server.py:308] - Using format specification: 137+bestaudio/best
+2025-05-20 01:57:37,804 - __main__ - INFO - [server.py:326] - Starting download for b722ab4e-b2da-4e98-8a9e-8075a5463d3a
+2025-05-20 01:57:42,942 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.0%
+2025-05-20 01:57:42,943 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.0%
+2025-05-20 01:57:42,944 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.1%
+2025-05-20 01:57:42,945 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.1%
+2025-05-20 01:57:42,946 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.2%
+2025-05-20 01:57:42,951 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.5%
+2025-05-20 01:57:42,957 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   1.0%
+2025-05-20 01:57:42,968 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   1.9%
+2025-05-20 01:57:42,990 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   3.8%
+2025-05-20 01:57:43,038 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   7.7%
+2025-05-20 01:57:43,127 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  15.3%
+2025-05-20 01:57:43,307 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  30.7%
+2025-05-20 01:57:43,705 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  61.3%
+2025-05-20 01:57:43,927 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  74.5%
+2025-05-20 01:57:44,026 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  74.5%
+2025-05-20 01:57:44,027 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  74.5%
+2025-05-20 01:57:44,028 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  74.6%
+2025-05-20 01:57:44,029 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  74.6%
+2025-05-20 01:57:44,031 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  74.7%
+2025-05-20 01:57:44,032 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  75.0%
+2025-05-20 01:57:44,035 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  75.5%
+2025-05-20 01:57:44,047 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  76.4%
+2025-05-20 01:57:44,070 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  78.3%
+2025-05-20 01:57:44,122 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  82.2%
+2025-05-20 01:57:44,221 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  89.8%
+2025-05-20 01:57:44,341 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a: 100.0%
+2025-05-20 01:57:44,343 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a: 100.0%
+2025-05-20 01:57:44,398 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.1%
+2025-05-20 01:57:44,399 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.3%
+2025-05-20 01:57:44,400 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   0.8%
+2025-05-20 01:57:44,402 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   1.6%
+2025-05-20 01:57:44,403 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   3.3%
+2025-05-20 01:57:44,405 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:   6.8%
+2025-05-20 01:57:44,408 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  13.7%
+2025-05-20 01:57:44,418 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  27.5%
+2025-05-20 01:57:44,440 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a:  55.0%
+2025-05-20 01:57:44,476 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a: 100.0%
+2025-05-20 01:57:44,478 - __main__ - INFO - [server.py:322] - Download progress for b722ab4e-b2da-4e98-8a9e-8075a5463d3a: 100.0%
+2025-05-20 01:57:44,670 - __main__ - INFO - [server.py:331] - Download completed for b722ab4e-b2da-4e98-8a9e-8075a5463d3a
+2025-05-20 01:57:44,671 - __main__ - INFO - [server.py:339] - Downloaded file for b722ab4e-b2da-4e98-8a9e-8075a5463d3a: C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\downloads\b722ab4e-b2da-4e98-8a9e-8075a5463d3a\hurts so good (slowed to perfection) - astrid s [edit audio].mkv
+2025-05-20 01:57:44,676 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:57:44] "GET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137&type=video HTTP/1.1" 200 -

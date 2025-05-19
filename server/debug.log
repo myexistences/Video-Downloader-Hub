@@ -1651,3 +1651,365 @@ PermissionError: [WinError 32] The process cannot access the file because it is 
 2025-05-20 01:57:44,670 - __main__ - INFO - [server.py:331] - Download completed for b722ab4e-b2da-4e98-8a9e-8075a5463d3a
 2025-05-20 01:57:44,671 - __main__ - INFO - [server.py:339] - Downloaded file for b722ab4e-b2da-4e98-8a9e-8075a5463d3a: C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\downloads\b722ab4e-b2da-4e98-8a9e-8075a5463d3a\hurts so good (slowed to perfection) - astrid s [edit audio].mkv
 2025-05-20 01:57:44,676 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 01:57:44] "GET /api/youtube/download?url=https://youtu.be/93hbPwOda6Y?si%3D_kyn_J9fhJnrClU1&itag=137&type=video HTTP/1.1" 200 -
+2025-05-20 02:15:23,202 - __main__ - INFO - [server.py:391] - Server starting on http://localhost:3001
+2025-05-20 02:15:23,203 - __main__ - INFO - [server.py:392] - Open your browser and go to: http://localhost:3001
+2025-05-20 02:15:23,242 - werkzeug - INFO - [_internal.py:97] - [31m[1mWARNING: This is a development server. Do not use it in a production deployment. Use a production WSGI server instead.[0m
+ * Running on http://127.0.0.1:3001
+2025-05-20 02:15:23,242 - werkzeug - INFO - [_internal.py:97] - [33mPress CTRL+C to quit[0m
+2025-05-20 02:15:23,245 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 02:15:24,380 - __main__ - INFO - [server.py:391] - Server starting on http://localhost:3001
+2025-05-20 02:15:24,380 - __main__ - INFO - [server.py:392] - Open your browser and go to: http://localhost:3001
+2025-05-20 02:15:24,402 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 02:15:24,409 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 02:15:27,515 - __main__ - INFO - [server.py:122] - Serving index.html
+2025-05-20 02:15:27,576 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:15:27] "[36mGET / HTTP/1.1[0m" 304 -
+2025-05-20 02:15:27,610 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:15:27] "[36mGET /styles.css HTTP/1.1[0m" 304 -
+2025-05-20 02:15:27,779 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:15:27] "[36mGET /script.js HTTP/1.1[0m" 304 -
+2025-05-20 02:15:58,621 - __main__ - INFO - [server.py:137] - Received YouTube info request for URL: https://youtu.be/dQAA_5cG2EM
+2025-05-20 02:15:58,622 - __main__ - INFO - [server.py:146] - Cleaned URL: https://www.youtube.com/watch?v=dQAA_5cG2EM
+2025-05-20 02:15:58,809 - __main__ - INFO - [server.py:154] - FFmpeg available: True
+2025-05-20 02:15:58,810 - __main__ - INFO - [server.py:168] - Starting video info extraction with yt-dlp
+2025-05-20 02:16:05,093 - __main__ - INFO - [server.py:171] - Successfully extracted video info
+2025-05-20 02:16:05,094 - __main__ - DEBUG - [server.py:174] - Available formats: 37
+2025-05-20 02:16:05,094 - __main__ - INFO - [server.py:183] - Filtered formats count: 13
+2025-05-20 02:16:05,094 - __main__ - INFO - [server.py:193] - Available resolutions: {720, 480, 360}
+2025-05-20 02:16:05,095 - __main__ - DEBUG - [server.py:197] - Processing 720p format
+2025-05-20 02:16:05,095 - __main__ - DEBUG - [server.py:220] - Added format: 720p - No Audio
+2025-05-20 02:16:05,095 - __main__ - DEBUG - [server.py:197] - Processing 480p format
+2025-05-20 02:16:05,096 - __main__ - DEBUG - [server.py:220] - Added format: 480p - No Audio
+2025-05-20 02:16:05,096 - __main__ - DEBUG - [server.py:197] - Processing 360p format
+2025-05-20 02:16:05,096 - __main__ - DEBUG - [server.py:220] - Added format: 360p - Includes Audio
+2025-05-20 02:16:05,096 - __main__ - INFO - [server.py:235] - Added MP3 format option
+2025-05-20 02:16:05,097 - __main__ - INFO - [server.py:246] - Successfully prepared response with 4 formats
+2025-05-20 02:16:05,098 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:16:05] "GET /api/youtube/info?url=https://youtu.be/dQAA_5cG2EM HTTP/1.1" 200 -
+2025-05-20 02:16:10,494 - __main__ - INFO - [server.py:274] - Download request - ID: 1f157700-9b86-4dbb-a15f-95ebe80a75bb, URL: https://youtu.be/dQAA_5cG2EM?si=ZB-vUbeEW1jV7VJG, format: 136, type: video
+2025-05-20 02:16:10,495 - __main__ - INFO - [server.py:283] - Cleaned URL for download: https://www.youtube.com/watch?v=dQAA_5cG2EM
+2025-05-20 02:16:10,523 - __main__ - INFO - [server.py:309] - Using format specification: 136+bestaudio/best
+2025-05-20 02:16:10,622 - __main__ - INFO - [server.py:327] - Starting download for 1f157700-9b86-4dbb-a15f-95ebe80a75bb
+2025-05-20 02:16:16,055 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.0%
+2025-05-20 02:16:16,057 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.1%
+2025-05-20 02:16:16,059 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.2%
+2025-05-20 02:16:16,062 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.4%
+2025-05-20 02:16:16,088 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.8%
+2025-05-20 02:16:16,121 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   1.6%
+2025-05-20 02:16:16,155 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   3.2%
+2025-05-20 02:16:16,198 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   6.4%
+2025-05-20 02:16:16,260 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:  12.8%
+2025-05-20 02:16:16,932 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:  25.7%
+2025-05-20 02:16:17,383 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:  44.8%
+2025-05-20 02:16:18,756 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:  83.1%
+2025-05-20 02:16:19,231 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb: 100.0%
+2025-05-20 02:16:19,233 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb: 100.0%
+2025-05-20 02:16:19,354 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.1%
+2025-05-20 02:16:19,357 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.3%
+2025-05-20 02:16:19,359 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   0.7%
+2025-05-20 02:16:19,362 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   1.5%
+2025-05-20 02:16:19,364 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   3.1%
+2025-05-20 02:16:19,390 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:   6.4%
+2025-05-20 02:16:19,442 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:  12.8%
+2025-05-20 02:16:19,542 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:  25.7%
+2025-05-20 02:16:19,736 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb:  51.6%
+2025-05-20 02:16:20,080 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb: 100.0%
+2025-05-20 02:16:20,083 - __main__ - INFO - [server.py:323] - Download progress for 1f157700-9b86-4dbb-a15f-95ebe80a75bb: 100.0%
+2025-05-20 02:16:20,452 - __main__ - INFO - [server.py:332] - Download completed for 1f157700-9b86-4dbb-a15f-95ebe80a75bb
+2025-05-20 02:16:20,453 - __main__ - INFO - [server.py:340] - Downloaded file for 1f157700-9b86-4dbb-a15f-95ebe80a75bb: C:\Users\Gaming Nove\Documents\Html Css js\Web yt Video Downloader\server\downloads\1f157700-9b86-4dbb-a15f-95ebe80a75bb\dynasty - miia [edit audio].mkv
+2025-05-20 02:16:20,457 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:16:20] "GET /api/youtube/download?url=https://youtu.be/dQAA_5cG2EM?si%3DZB-vUbeEW1jV7VJG&itag=136&type=video HTTP/1.1" 200 -
+2025-05-20 02:16:46,132 - __main__ - INFO - [server.py:137] - Received YouTube info request for URL: https://youtu.be/L_AMLVM76bM
+2025-05-20 02:16:46,133 - __main__ - INFO - [server.py:146] - Cleaned URL: https://www.youtube.com/watch?v=L_AMLVM76bM
+2025-05-20 02:16:46,195 - __main__ - INFO - [server.py:154] - FFmpeg available: True
+2025-05-20 02:16:46,195 - __main__ - INFO - [server.py:168] - Starting video info extraction with yt-dlp
+2025-05-20 02:16:51,993 - __main__ - INFO - [server.py:171] - Successfully extracted video info
+2025-05-20 02:16:51,993 - __main__ - DEBUG - [server.py:174] - Available formats: 47
+2025-05-20 02:16:51,994 - __main__ - INFO - [server.py:183] - Filtered formats count: 18
+2025-05-20 02:16:51,994 - __main__ - INFO - [server.py:193] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 02:16:51,995 - __main__ - DEBUG - [server.py:197] - Processing 1080p format
+2025-05-20 02:16:51,995 - __main__ - DEBUG - [server.py:220] - Added format: 1080p - No Audio
+2025-05-20 02:16:51,995 - __main__ - DEBUG - [server.py:197] - Processing 720p format
+2025-05-20 02:16:51,996 - __main__ - DEBUG - [server.py:220] - Added format: 720p - No Audio
+2025-05-20 02:16:51,996 - __main__ - DEBUG - [server.py:197] - Processing 480p format
+2025-05-20 02:16:51,996 - __main__ - DEBUG - [server.py:220] - Added format: 480p - No Audio
+2025-05-20 02:16:51,997 - __main__ - DEBUG - [server.py:197] - Processing 360p format
+2025-05-20 02:16:51,997 - __main__ - DEBUG - [server.py:220] - Added format: 360p - Includes Audio
+2025-05-20 02:16:51,997 - __main__ - INFO - [server.py:235] - Added MP3 format option
+2025-05-20 02:16:51,998 - __main__ - INFO - [server.py:246] - Successfully prepared response with 5 formats
+2025-05-20 02:16:51,999 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:16:51] "GET /api/youtube/info?url=https://youtu.be/L_AMLVM76bM HTTP/1.1" 200 -
+2025-05-20 02:17:06,246 - __main__ - INFO - [server.py:274] - Download request - ID: 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7, URL: https://youtu.be/L_AMLVM76bM?si=WZhMzhGL_63t3YgU, format: 299, type: video
+2025-05-20 02:17:06,247 - __main__ - INFO - [server.py:283] - Cleaned URL for download: https://www.youtube.com/watch?v=L_AMLVM76bM
+2025-05-20 02:17:06,296 - __main__ - INFO - [server.py:309] - Using format specification: 299+bestaudio/best
+2025-05-20 02:17:06,391 - __main__ - INFO - [server.py:327] - Starting download for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7
+2025-05-20 02:17:11,623 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.0%
+2025-05-20 02:17:11,625 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.0%
+2025-05-20 02:17:11,627 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.0%
+2025-05-20 02:17:11,629 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.0%
+2025-05-20 02:17:11,672 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.1%
+2025-05-20 02:17:11,710 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.2%
+2025-05-20 02:17:11,759 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.3%
+2025-05-20 02:17:11,809 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.7%
+2025-05-20 02:17:11,886 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   1.4%
+2025-05-20 02:17:12,567 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   2.7%
+2025-05-20 02:17:12,976 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   4.7%
+2025-05-20 02:17:14,254 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   8.7%
+2025-05-20 02:17:15,286 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  11.9%
+2025-05-20 02:17:16,221 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  14.9%
+2025-05-20 02:17:17,312 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  18.2%
+2025-05-20 02:17:18,225 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  21.1%
+2025-05-20 02:17:19,253 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  24.4%
+2025-05-20 02:17:20,082 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  26.8%
+2025-05-20 02:17:20,503 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  26.8%
+2025-05-20 02:17:20,504 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  26.8%
+2025-05-20 02:17:20,504 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  26.9%
+2025-05-20 02:17:20,505 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  26.9%
+2025-05-20 02:17:20,518 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  26.9%
+2025-05-20 02:17:20,548 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  27.0%
+2025-05-20 02:17:20,610 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  27.2%
+2025-05-20 02:17:20,732 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  27.5%
+2025-05-20 02:17:20,973 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  28.2%
+2025-05-20 02:17:21,449 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  29.6%
+2025-05-20 02:17:22,352 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  32.3%
+2025-05-20 02:17:23,100 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  35.3%
+2025-05-20 02:17:24,385 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  39.4%
+2025-05-20 02:17:25,378 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  42.5%
+2025-05-20 02:17:26,401 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  45.7%
+2025-05-20 02:17:27,375 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  48.7%
+2025-05-20 02:17:28,496 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  51.9%
+2025-05-20 02:17:28,846 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.2%
+2025-05-20 02:17:29,117 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.2%
+2025-05-20 02:17:29,118 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.2%
+2025-05-20 02:17:29,120 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.2%
+2025-05-20 02:17:29,121 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.2%
+2025-05-20 02:17:29,129 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.2%
+2025-05-20 02:17:29,155 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.3%
+2025-05-20 02:17:29,202 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.5%
+2025-05-20 02:17:29,295 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  53.8%
+2025-05-20 02:17:29,477 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  54.5%
+2025-05-20 02:17:29,828 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  55.9%
+2025-05-20 02:17:30,609 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  58.6%
+2025-05-20 02:17:31,711 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  62.1%
+2025-05-20 02:17:32,732 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  65.3%
+2025-05-20 02:17:33,780 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  68.4%
+2025-05-20 02:17:34,736 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  71.3%
+2025-05-20 02:17:35,630 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  74.4%
+2025-05-20 02:17:36,729 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  77.9%
+2025-05-20 02:17:37,358 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  79.9%
+2025-05-20 02:17:37,492 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  79.9%
+2025-05-20 02:17:37,495 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  79.9%
+2025-05-20 02:17:37,496 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  79.9%
+2025-05-20 02:17:37,497 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  79.9%
+2025-05-20 02:17:37,501 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  80.0%
+2025-05-20 02:17:37,529 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  80.1%
+2025-05-20 02:17:37,585 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  80.2%
+2025-05-20 02:17:37,693 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  80.6%
+2025-05-20 02:17:37,912 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  81.2%
+2025-05-20 02:17:38,357 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  82.6%
+2025-05-20 02:17:39,230 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  85.3%
+2025-05-20 02:17:40,173 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  88.5%
+2025-05-20 02:17:41,949 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  91.8%
+2025-05-20 02:17:42,727 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  93.6%
+2025-05-20 02:17:43,735 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  96.0%
+2025-05-20 02:17:44,408 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  98.4%
+2025-05-20 02:17:44,806 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7: 100.0%
+2025-05-20 02:17:44,808 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7: 100.0%
+2025-05-20 02:17:45,033 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.1%
+2025-05-20 02:17:45,034 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.2%
+2025-05-20 02:17:45,035 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   0.6%
+2025-05-20 02:17:45,036 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   1.2%
+2025-05-20 02:17:45,037 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   2.4%
+2025-05-20 02:17:45,048 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:   5.0%
+2025-05-20 02:17:45,073 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  10.0%
+2025-05-20 02:17:45,114 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  20.1%
+2025-05-20 02:17:45,247 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  40.3%
+2025-05-20 02:17:45,840 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7:  80.7%
+2025-05-20 02:17:45,891 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7: 100.0%
+2025-05-20 02:17:45,893 - __main__ - INFO - [server.py:323] - Download progress for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7: 100.0%
+2025-05-20 02:17:46,168 - __main__ - INFO - [server.py:332] - Download completed for 0e43d593-d92a-4aa8-b01e-cb8cef2cf5f7
+2025-05-20 02:17:46,203 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:17:46] "GET /api/youtube/download?url=https://youtu.be/L_AMLVM76bM?si%3DWZhMzhGL_63t3YgU&itag=299&type=video HTTP/1.1" 200 -
+2025-05-20 02:17:56,854 - __main__ - INFO - [server.py:137] - Received YouTube info request for URL: https://youtu.be/LMTfspo55jw
+2025-05-20 02:17:56,856 - __main__ - INFO - [server.py:146] - Cleaned URL: https://www.youtube.com/watch?v=LMTfspo55jw
+2025-05-20 02:17:57,008 - __main__ - INFO - [server.py:154] - FFmpeg available: True
+2025-05-20 02:17:57,009 - __main__ - INFO - [server.py:168] - Starting video info extraction with yt-dlp
+2025-05-20 02:18:03,275 - __main__ - INFO - [server.py:171] - Successfully extracted video info
+2025-05-20 02:18:03,275 - __main__ - DEBUG - [server.py:174] - Available formats: 71
+2025-05-20 02:18:03,276 - __main__ - INFO - [server.py:183] - Filtered formats count: 22
+2025-05-20 02:18:03,276 - __main__ - INFO - [server.py:193] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 02:18:03,276 - __main__ - DEBUG - [server.py:197] - Processing 1080p format
+2025-05-20 02:18:03,277 - __main__ - DEBUG - [server.py:220] - Added format: 1080p - No Audio
+2025-05-20 02:18:03,277 - __main__ - DEBUG - [server.py:197] - Processing 720p format
+2025-05-20 02:18:03,278 - __main__ - DEBUG - [server.py:220] - Added format: 720p - No Audio
+2025-05-20 02:18:03,278 - __main__ - DEBUG - [server.py:197] - Processing 480p format
+2025-05-20 02:18:03,278 - __main__ - DEBUG - [server.py:220] - Added format: 480p - No Audio
+2025-05-20 02:18:03,279 - __main__ - DEBUG - [server.py:197] - Processing 360p format
+2025-05-20 02:18:03,279 - __main__ - DEBUG - [server.py:220] - Added format: 360p - Includes Audio
+2025-05-20 02:18:03,279 - __main__ - INFO - [server.py:235] - Added MP3 format option
+2025-05-20 02:18:03,279 - __main__ - INFO - [server.py:246] - Successfully prepared response with 5 formats
+2025-05-20 02:18:03,281 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:18:03] "GET /api/youtube/info?url=https://youtu.be/LMTfspo55jw HTTP/1.1" 200 -
+2025-05-20 02:18:18,537 - __main__ - INFO - [server.py:274] - Download request - ID: abc7d368-5765-422b-99b3-deb07f8c9fee, URL: https://youtu.be/LMTfspo55jw?si=rfF4-9liio-Qdy-r, format: 699, type: video
+2025-05-20 02:18:18,538 - __main__ - INFO - [server.py:283] - Cleaned URL for download: https://www.youtube.com/watch?v=LMTfspo55jw
+2025-05-20 02:18:18,570 - __main__ - INFO - [server.py:309] - Using format specification: 699+bestaudio/best
+2025-05-20 02:18:18,664 - __main__ - INFO - [server.py:327] - Starting download for abc7d368-5765-422b-99b3-deb07f8c9fee
+2025-05-20 02:18:24,104 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.0%
+2025-05-20 02:18:24,106 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.0%
+2025-05-20 02:18:24,108 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.0%
+2025-05-20 02:18:24,109 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.0%
+2025-05-20 02:18:24,111 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.0%
+2025-05-20 02:18:24,114 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.1%
+2025-05-20 02:18:24,122 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.1%
+2025-05-20 02:18:24,133 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.3%
+2025-05-20 02:18:24,161 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.6%
+2025-05-20 02:18:24,225 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   1.1%
+2025-05-20 02:18:24,315 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   2.3%
+2025-05-20 02:18:24,496 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   4.6%
+2025-05-20 02:18:24,892 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   9.2%
+2025-05-20 02:18:25,105 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.3%
+2025-05-20 02:18:25,214 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.3%
+2025-05-20 02:18:25,215 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.3%
+2025-05-20 02:18:25,217 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.3%
+2025-05-20 02:18:25,219 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.3%
+2025-05-20 02:18:25,221 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.3%
+2025-05-20 02:18:25,223 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.4%
+2025-05-20 02:18:25,225 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.4%
+2025-05-20 02:18:25,253 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.6%
+2025-05-20 02:18:25,278 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  11.9%
+2025-05-20 02:18:25,323 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  12.4%
+2025-05-20 02:18:25,413 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  13.6%
+2025-05-20 02:18:25,627 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  15.9%
+2025-05-20 02:18:26,101 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  20.5%
+2025-05-20 02:18:26,335 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.8%
+2025-05-20 02:18:26,407 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.8%
+2025-05-20 02:18:26,409 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.8%
+2025-05-20 02:18:26,411 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.8%
+2025-05-20 02:18:26,412 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.8%
+2025-05-20 02:18:26,414 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.8%
+2025-05-20 02:18:26,417 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.8%
+2025-05-20 02:18:26,420 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  22.9%
+2025-05-20 02:18:26,447 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  23.0%
+2025-05-20 02:18:26,477 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  23.3%
+2025-05-20 02:18:26,537 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  23.9%
+2025-05-20 02:18:26,656 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  25.1%
+2025-05-20 02:18:26,850 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  27.4%
+2025-05-20 02:18:27,326 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  31.9%
+2025-05-20 02:18:27,549 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.1%
+2025-05-20 02:18:27,641 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.1%
+2025-05-20 02:18:27,642 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.1%
+2025-05-20 02:18:27,643 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.1%
+2025-05-20 02:18:27,645 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.1%
+2025-05-20 02:18:27,646 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.1%
+2025-05-20 02:18:27,648 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.1%
+2025-05-20 02:18:27,661 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.2%
+2025-05-20 02:18:27,677 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.3%
+2025-05-20 02:18:27,711 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  34.6%
+2025-05-20 02:18:27,779 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  35.2%
+2025-05-20 02:18:27,873 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  36.4%
+2025-05-20 02:18:28,073 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  38.6%
+2025-05-20 02:18:28,541 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  43.2%
+2025-05-20 02:18:28,745 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.1%
+2025-05-20 02:18:28,874 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.1%
+2025-05-20 02:18:28,875 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.1%
+2025-05-20 02:18:28,876 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.1%
+2025-05-20 02:18:28,877 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.1%
+2025-05-20 02:18:28,878 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.1%
+2025-05-20 02:18:28,879 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.1%
+2025-05-20 02:18:28,890 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.2%
+2025-05-20 02:18:28,901 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.3%
+2025-05-20 02:18:28,936 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  45.6%
+2025-05-20 02:18:28,993 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  46.2%
+2025-05-20 02:18:29,101 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  47.4%
+2025-05-20 02:18:29,307 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  49.7%
+2025-05-20 02:18:29,724 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  54.2%
+2025-05-20 02:18:29,976 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.5%
+2025-05-20 02:18:30,029 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.5%
+2025-05-20 02:18:30,031 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.5%
+2025-05-20 02:18:30,032 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.5%
+2025-05-20 02:18:30,033 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.5%
+2025-05-20 02:18:30,035 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.5%
+2025-05-20 02:18:30,037 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.6%
+2025-05-20 02:18:30,047 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.7%
+2025-05-20 02:18:30,067 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  56.8%
+2025-05-20 02:18:30,110 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  57.1%
+2025-05-20 02:18:30,198 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  57.7%
+2025-05-20 02:18:30,292 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  58.8%
+2025-05-20 02:18:30,477 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  61.1%
+2025-05-20 02:18:30,970 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  65.7%
+2025-05-20 02:18:31,138 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.4%
+2025-05-20 02:18:31,243 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.4%
+2025-05-20 02:18:31,245 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.4%
+2025-05-20 02:18:31,246 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.5%
+2025-05-20 02:18:31,248 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.5%
+2025-05-20 02:18:31,249 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.5%
+2025-05-20 02:18:31,251 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.5%
+2025-05-20 02:18:31,256 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.6%
+2025-05-20 02:18:31,274 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  67.7%
+2025-05-20 02:18:31,300 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  68.0%
+2025-05-20 02:18:31,359 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  68.6%
+2025-05-20 02:18:31,454 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  69.7%
+2025-05-20 02:18:31,644 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  72.0%
+2025-05-20 02:18:32,126 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  76.6%
+2025-05-20 02:18:32,336 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.6%
+2025-05-20 02:18:32,498 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.6%
+2025-05-20 02:18:32,501 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.6%
+2025-05-20 02:18:32,504 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.6%
+2025-05-20 02:18:32,506 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.6%
+2025-05-20 02:18:32,507 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.6%
+2025-05-20 02:18:32,509 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.7%
+2025-05-20 02:18:32,511 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.7%
+2025-05-20 02:18:32,528 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  78.9%
+2025-05-20 02:18:32,563 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  79.2%
+2025-05-20 02:18:32,623 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  79.7%
+2025-05-20 02:18:32,716 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  80.9%
+2025-05-20 02:18:32,894 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  83.2%
+2025-05-20 02:18:33,324 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  87.8%
+2025-05-20 02:18:33,511 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.6%
+2025-05-20 02:18:33,633 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.6%
+2025-05-20 02:18:33,635 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.6%
+2025-05-20 02:18:33,637 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.6%
+2025-05-20 02:18:33,640 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.6%
+2025-05-20 02:18:33,643 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.6%
+2025-05-20 02:18:33,646 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.6%
+2025-05-20 02:18:33,648 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.7%
+2025-05-20 02:18:33,662 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  89.9%
+2025-05-20 02:18:33,693 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  90.1%
+2025-05-20 02:18:33,755 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  90.7%
+2025-05-20 02:18:33,856 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  91.9%
+2025-05-20 02:18:34,038 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  94.2%
+2025-05-20 02:18:34,497 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  98.8%
+2025-05-20 02:18:34,627 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee: 100.0%
+2025-05-20 02:18:34,630 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee: 100.0%
+2025-05-20 02:18:34,809 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.0%
+2025-05-20 02:18:34,810 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.1%
+2025-05-20 02:18:34,811 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.3%
+2025-05-20 02:18:34,812 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   0.6%
+2025-05-20 02:18:34,814 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   1.3%
+2025-05-20 02:18:34,815 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   2.7%
+2025-05-20 02:18:34,820 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:   5.4%
+2025-05-20 02:18:34,833 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  10.7%
+2025-05-20 02:18:34,856 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  21.5%
+2025-05-20 02:18:34,902 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  43.1%
+2025-05-20 02:18:34,995 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee:  86.3%
+2025-05-20 02:18:35,019 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee: 100.0%
+2025-05-20 02:18:35,022 - __main__ - INFO - [server.py:323] - Download progress for abc7d368-5765-422b-99b3-deb07f8c9fee: 100.0%
+2025-05-20 02:18:36,242 - __main__ - INFO - [server.py:332] - Download completed for abc7d368-5765-422b-99b3-deb07f8c9fee
+2025-05-20 02:18:36,273 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:18:36] "GET /api/youtube/download?url=https://youtu.be/LMTfspo55jw?si%3DrfF4-9liio-Qdy-r&itag=699&type=video HTTP/1.1" 200 -
+2025-05-20 02:20:10,831 - werkzeug - INFO - [_internal.py:97] -  * Detected change in 'C:\\Users\\Gaming Nove\\Documents\\Html Css js\\Web yt Video Downloader\\server\\server.py', reloading
+2025-05-20 02:20:10,968 - werkzeug - INFO - [_internal.py:97] -  * Restarting with stat
+2025-05-20 02:20:12,575 - __main__ - INFO - [server.py:391] - Server starting on http://localhost:3001
+2025-05-20 02:20:12,576 - __main__ - INFO - [server.py:392] - Open your browser and go to: http://localhost:3001
+2025-05-20 02:20:12,600 - werkzeug - WARNING - [_internal.py:97] -  * Debugger is active!
+2025-05-20 02:20:12,608 - werkzeug - INFO - [_internal.py:97] -  * Debugger PIN: 621-194-202
+2025-05-20 02:20:15,626 - __main__ - INFO - [server.py:137] - Received YouTube info request for URL: https://youtu.be/LMTfspo55jw
+2025-05-20 02:20:15,627 - __main__ - INFO - [server.py:146] - Cleaned URL: https://www.youtube.com/watch?v=LMTfspo55jw
+2025-05-20 02:20:15,657 - __main__ - INFO - [server.py:154] - FFmpeg available: True
+2025-05-20 02:20:15,658 - __main__ - INFO - [server.py:168] - Starting video info extraction with yt-dlp
+2025-05-20 02:20:22,459 - __main__ - INFO - [server.py:171] - Successfully extracted video info
+2025-05-20 02:20:22,459 - __main__ - DEBUG - [server.py:174] - Available formats: 71
+2025-05-20 02:20:22,460 - __main__ - INFO - [server.py:183] - Filtered formats count: 22
+2025-05-20 02:20:22,460 - __main__ - INFO - [server.py:193] - Available resolutions: {1080, 480, 360, 720}
+2025-05-20 02:20:22,461 - __main__ - DEBUG - [server.py:197] - Processing 1080p format
+2025-05-20 02:20:22,461 - __main__ - DEBUG - [server.py:220] - Added format: 1080p - No Audio + Includes Audio
+2025-05-20 02:20:22,461 - __main__ - DEBUG - [server.py:197] - Processing 720p format
+2025-05-20 02:20:22,462 - __main__ - DEBUG - [server.py:220] - Added format: 720p - No Audio + Includes Audio
+2025-05-20 02:20:22,462 - __main__ - DEBUG - [server.py:197] - Processing 480p format
+2025-05-20 02:20:22,462 - __main__ - DEBUG - [server.py:220] - Added format: 480p - No Audio + Includes Audio
+2025-05-20 02:20:22,463 - __main__ - DEBUG - [server.py:197] - Processing 360p format
+2025-05-20 02:20:22,463 - __main__ - DEBUG - [server.py:220] - Added format: 360p - Includes Audio
+2025-05-20 02:20:22,463 - __main__ - INFO - [server.py:235] - Added MP3 format option
+2025-05-20 02:20:22,463 - __main__ - INFO - [server.py:246] - Successfully prepared response with 5 formats
+2025-05-20 02:20:22,465 - werkzeug - INFO - [_internal.py:97] - 127.0.0.1 - - [20/May/2025 02:20:22] "GET /api/youtube/info?url=https://youtu.be/LMTfspo55jw HTTP/1.1" 200 -

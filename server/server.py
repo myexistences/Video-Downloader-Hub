@@ -104,7 +104,7 @@ def clean_youtube_url(url):
             raise ValueError("Invalid YouTube URL format")
             
         # Construct clean URL
-        
+
         return f'https://www.youtube.com/watch?v={video_id}'
     except Exception as e:
         logger.error(f"Error cleaning URL: {str(e)}")
@@ -208,7 +208,7 @@ def youtube_info():
                             'size': format_size(fmt.get('filesize', 0) or fmt.get('filesize_approx', 0)),
                             'hasAudio': fmt.get('acodec') and fmt.get('acodec') != 'none',
                             'audioCodec': fmt.get('acodec', 'Unknown'),
-                            'audioStatus': "Includes Audio" if fmt.get('acodec') != 'none' else "No Audio",
+                            'audioStatus': "Includes Audio" if fmt.get('acodec') != 'none' else "No Audio + Includes Audio",
                             'type': 'video',
                             'url': fmt.get('url', ''),
                             'format_note': fmt.get('format_note', ''),

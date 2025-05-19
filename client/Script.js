@@ -383,7 +383,10 @@ async function downloadYouTubeVideo(url, format) {
                 <div class="progress-bar">
                     <div class="progress"></div>
                 </div>
-                <div class="progress-text">Preparing download...</div>
+                <div class="progress-text">
+                    <span>Preparing download...</span>
+                    <span class="progress-percentage">0%</span>
+                </div>
             `;
             document.getElementById('youtube-result').appendChild(progressContainer);
             log('Created progress bar container');
@@ -406,8 +409,36 @@ async function downloadYouTubeVideo(url, format) {
             ? contentDisposition.split('filename=')[1].replace(/"/g, '')
             : 'video.mp4';
 
-        // Create a blob from the response
-        const blob = await response.blob();
+        // Get the total size from Content-Length header
+        const totalSize = parseInt(response.headers.get('Content-Length') || '0');
+        let downloadedSize = 0;
+
+        // Create a reader for the response body
+        const reader = response.body.getReader();
+        const chunks = [];
+
+        // Read the response stream
+        while (true) {
+            const {done, value} = await reader.read();
+            
+            if (done) break;
+            
+            chunks.push(value);
+            downloadedSize += value.length;
+            
+            // Update progress
+            const progress = totalSize ? Math.round((downloadedSize / totalSize) * 100) : 0;
+            const progressBar = progressContainer.querySelector('.progress');
+            const progressText = progressContainer.querySelector('.progress-text span:first-child');
+            const progressPercentage = progressContainer.querySelector('.progress-percentage');
+            
+            progressBar.style.width = `${progress}%`;
+            progressText.textContent = progress === 100 ? 'Download Complete!' : 'Downloading...';
+            progressPercentage.textContent = `${progress}%`;
+        }
+
+        // Create a blob from the chunks
+        const blob = new Blob(chunks);
         log('Download completed, creating blob', 'success');
 
         // Create download link
@@ -419,12 +450,6 @@ async function downloadYouTubeVideo(url, format) {
         link.click();
         window.URL.revokeObjectURL(downloadUrl);
         document.body.removeChild(link);
-        
-        // Update progress bar to show completion
-        const progressBar = progressContainer.querySelector('.progress');
-        const progressText = progressContainer.querySelector('.progress-text');
-        progressBar.style.width = '100%';
-        progressText.textContent = 'Download Complete!';
         
         // Show success notification
         showNotification('Download completed successfully!', 'success');

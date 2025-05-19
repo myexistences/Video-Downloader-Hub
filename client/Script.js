@@ -171,10 +171,11 @@ async function fetchYouTubeInfo(url) {
             if (formatsContainer) {
                 formatsContainer.innerHTML = data.formats.map((format, index) => `
                     <div class="format-option ${index === 0 ? 'selected' : ''}" 
-                         data-format='${JSON.stringify(format)}'>
+                         data-format='${JSON.stringify(format)}'
+                         data-has-audio="${format.hasAudio}">
                         <strong>${format.mimeType.split('/')[1].toUpperCase()} ${format.quality}</strong>
                         <p>Size: ${format.size}</p>
-                        <p>Audio: ${format.audioStatus}</p>
+                        <p>${format.audioStatus}</p>
                         ${format.fps ? `<p>FPS: ${format.fps}</p>` : ''}
                     </div>
                 `).join('');
